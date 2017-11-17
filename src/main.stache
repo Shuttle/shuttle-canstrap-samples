@@ -1,15 +1,14 @@
-<sample-navigation />
+<sample-navigation samples:from="samples" />
 <div class="container-fluid">
   <div class="row flex-xl-nowrap">
     <div class="col-12 col-md-3 col-xl-2 csd-sidebar">
       <nav class="csd-links">
         <ul class="nav">
-          <li>
-            <a href="{{routeUrl(sample='cs-fetching')}}">cs-fetching</a>
-          </li>
-          <li>
-            <a href="{{routeUrl(sample='cs-input')}}">cs-input</a>
-          </li>
+          {{#each (samples)}}
+            <li>
+              <a href="{{routeUrl(sample=name})}}">{{name}}</a>
+            </li>
+          {{/each}}
         </ul>
       </nav>
     </div>

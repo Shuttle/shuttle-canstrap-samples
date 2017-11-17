@@ -4,47 +4,30 @@ import Component from 'can-component';
 import view from './navigation.stache!';
 import each from 'can-util/js/each/';
 import {DropdownItemList, DropdownItem} from 'shuttle-canstrap/nav-dropdown/';
+import route from 'can-route/';
 
 var ViewModel = DefineMap.extend({
-    items: {
-        get: function() {
-            var result = new DropdownItemList();
-
-            result.push(new DropdownItem({
-              text: 'cs-nav-dropdown',
-              items: [
-                { 
-                  href: '#', 
-                  text: 'item-1' 
-                },                { 
-                  href: '#', 
-                  text: 'item-2' 
-                },                { 
-                  href: '#', 
-                  text: 'item-3' 
-                }
-              ]
-            }));
-
-            result.push(new DropdownItem({
-              text: 'cs-nav-dropdown-second',
-              items: [
-                { 
-                  href: '#', 
-                  text: 'item-1' 
-                },                { 
-                  href: '#', 
-                  text: 'item-2' 
-                },                { 
-                  href: '#', 
-                  text: 'item-3' 
-                }
-              ]
-            }));
-
-            return result;
-        }
+  samples: { 
+    get: function(value) {
+      var result = new DropdownItemList();
+      
+      var dropdown = new DropdownItem({
+        text: 'cs-nav-dropdown',
+        items: new DropdownItemList()
+      });
+      
+      each(value, function(sample) {
+        dropdown.items.push({
+          text: sample.name,
+          href: route.url({sample: sample.name})
+        });
+      });
+      
+      result.push(dropdown);
+      
+      return result;
     }
+  }
 });
 
 export default Component.extend({

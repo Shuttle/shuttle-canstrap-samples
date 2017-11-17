@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css!';
 import './main.css!';
 
 import DefineMap from "can-define/map/";
+import DefineList from "can-define/list/";
 import template from "./main.stache!";
 import route from 'can-route/';
 import stache  from 'can-stache/';
@@ -17,6 +18,7 @@ import "~/components/cs-fetching-sample";
 import "~/components/cs-input-sample";
 
 var ApplicationViewModel = DefineMap.extend({
+  samples: { Type: DefineList }
 });
 
 var RouteViewModel = DefineMap.extend({
@@ -36,7 +38,19 @@ var applicationViewModel = new ApplicationViewModel({
       
       $('#application-content').html(stache('<' + newVal + '-sample />')());
     });
-  }
+  },
+  
+  samples: [
+    {
+      name: 'cs-fetching'
+    },
+    {
+      name: 'cs-input'
+    },
+    {
+      name: 'cs-label'
+    }
+  ]
 });
 
 $('#application-container').html(template(applicationViewModel));

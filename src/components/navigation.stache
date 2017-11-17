@@ -6,35 +6,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          cs-nav-dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          
-            <a class="dropdown-item" href="#">item-1</a>
-          
-            <a class="dropdown-item" href="#">item-2</a>
-          
-            <a class="dropdown-item" href="#">item-3</a>
-          
-        </div>
-      </li>
-      <cs-nav-dropdown items:from="items" />
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          cs-nav-dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          
-            <a class="dropdown-item" href="#">item-1</a>
-          
-            <a class="dropdown-item" href="#">item-2</a>
-          
-            <a class="dropdown-item" href="#">item-3</a>
-          
-        </div>
-      </li>
+      <cs-nav-dropdown items:from="samples" />
     </ul>
 
     <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
