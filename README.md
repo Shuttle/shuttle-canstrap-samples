@@ -1,6 +1,6 @@
-# shuttle-canstrap
+# shuttle-canstrap-samples
 
 **Note**: this package is still in development.
 
-Provides [canjs](https://canjs.com/) components built using [bootstrap](http://getbootstrap.com/) v4.
+Provides samples showing how to use [shuttle-canstrap](https://www.npmjs.com/package/shuttle-canstrap) components.
 
