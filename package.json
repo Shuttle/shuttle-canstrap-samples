@@ -46,6 +46,7 @@
     "can-set": "^1.3.3",
     "can-stache": "^3.13.4",
     "can-stache-bindings": "^3.11.1",
+    "font-awesome": "^4.7.0",
     "popper.js": "^1.12.9",
     "shuttle-canstrap": "^1.0.4",
     "steal": "^1.6.0",

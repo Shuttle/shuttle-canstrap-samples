@@ -1,12 +1,12 @@
-<sample-navigation samples:from="samples" />
+<resource-navigation resources:from="resources" />
 <div class="container-fluid">
   <div class="row flex-xl-nowrap">
     <div class="col-12 col-md-3 col-xl-2 csd-sidebar">
       <nav class="csd-links">
         <ul class="nav">
-          {{#each (samples)}}
+          {{#each (resources)}}
             <li>
-              <a href="{{routeUrl(sample=name})}}">{{name}}</a>
+              <a href="{{routeUrl(resource=name})}}">{{name}}</a>
             </li>
           {{/each}}
         </ul>

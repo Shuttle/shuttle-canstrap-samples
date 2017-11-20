@@ -7,7 +7,7 @@ import {DropdownItemList, DropdownItem} from 'shuttle-canstrap/nav-dropdown/';
 import route from 'can-route/';
 
 var ViewModel = DefineMap.extend({
-  samples: { 
+  resources: { 
     get: function(value) {
       var result = new DropdownItemList();
       
@@ -16,10 +16,10 @@ var ViewModel = DefineMap.extend({
         items: new DropdownItemList()
       });
       
-      each(value, function(sample) {
+      each(value, function(resource) {
         dropdown.items.push({
-          text: sample.name,
-          href: route.url({sample: sample.name})
+          text: resource.name,
+          href: route.url({resource: resource.name})
         });
       });
       
@@ -31,7 +31,7 @@ var ViewModel = DefineMap.extend({
 });
 
 export default Component.extend({
-    tag: 'sample-navigation',
+    tag: 'resource-navigation',
     view,
     ViewModel
 });

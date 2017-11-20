@@ -1,0 +1,4 @@
+<h1>cs-page-title-sample</h1>
+<div>
+    <cs-page-title title="This is a page title" />
+</div>

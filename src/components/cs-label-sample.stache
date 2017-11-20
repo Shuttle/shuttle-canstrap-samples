@@ -1,0 +1,7 @@
+<h1>cs-label-sample</h1>
+<div>
+    <cs-label label="This is a label" />
+</div>
+<div>
+    <cs-label label="This is a required label" required="true" />
+</div>
