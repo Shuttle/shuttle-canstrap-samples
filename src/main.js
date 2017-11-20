@@ -20,6 +20,7 @@ import "~/components/cs-fetching-sample";
 import "~/components/cs-label-sample";
 import "~/components/cs-input-sample";
 import "~/components/cs-page-title-sample";
+import "~/components/cs-select-input-sample";
 
 var ApplicationViewModel = DefineMap.extend({
     resources: {Type: DefineList}
@@ -49,7 +50,8 @@ var applicationViewModel = new ApplicationViewModel({
         { name: 'cs-fetching' },
         { name: 'cs-input' },
         { name: 'cs-label' },
-        { name: 'cs-page-title' }
+        { name: 'cs-page-title' },
+        { name: 'cs-select-input' }
     ]
 });
 

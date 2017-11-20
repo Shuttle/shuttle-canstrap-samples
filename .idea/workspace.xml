@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fcd2eb4-a326-4e1f-b03b-d82b05b39ece" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/cs-checkbox-sample.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/cs-checkbox-sample.stache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/cs-label-sample.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/cs-label-sample.stache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/cs-page-title-sample.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/cs-page-title-sample.stache" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/router.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/cs-input-sample.js" afterPath="$PROJECT_DIR$/src/components/cs-input-sample.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/cs-input-sample.stache" afterPath="$PROJECT_DIR$/src/components/cs-input-sample.stache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/navigation.js" afterPath="$PROJECT_DIR$/src/components/navigation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/navigation.stache" afterPath="$PROJECT_DIR$/src/components/navigation.stache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/cs-select-input-sample.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/cs-select-input-sample.stache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.stache" afterPath="$PROJECT_DIR$/src/main.stache" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,7 +22,7 @@
       <file leaf-file-name="cs-input-sample.stache" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/cs-input-sample.stache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="0">
               <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
@@ -55,11 +42,33 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="51" column="30" lean-forward="false" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+            <state relative-caret-position="399">
+              <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cs-select-input-sample.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/cs-select-input-sample.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cs-select-input-sample.stache" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/cs-select-input-sample.stache">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="57" lean-forward="false" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cs-page-title-sample.stache" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cs-page-title-sample.stache" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/cs-page-title-sample.stache">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
@@ -112,10 +121,12 @@
         <option value="$PROJECT_DIR$/node_modules/shuttle-canstrap/checkbox/checkbox.stache" />
         <option value="$PROJECT_DIR$/src/components/cs-input-sample.stache" />
         <option value="$PROJECT_DIR$/src/components/cs-label-sample.stache" />
-        <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/components/cs-label-sample.js" />
         <option value="$PROJECT_DIR$/src/components/cs-page-title-sample.js" />
         <option value="$PROJECT_DIR$/src/components/cs-page-title-sample.stache" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/components/cs-select-input-sample.stache" />
+        <option value="$PROJECT_DIR$/src/components/cs-select-input-sample.js" />
       </list>
     </option>
   </component>
@@ -226,12 +237,12 @@
       <workItem from="1510984133433" duration="2551000" />
       <workItem from="1511074390900" duration="6031000" />
       <workItem from="1511151478354" duration="6018000" />
-      <workItem from="1511200117572" duration="906000" />
+      <workItem from="1511200117572" duration="2463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16760000" />
+    <option name="totallyTimeSpent" value="18317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -376,6 +387,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -402,19 +416,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/cs-input-sample.stache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="0">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="51" column="30" lean-forward="false" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -448,6 +452,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="78" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/cs-select-input-sample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/cs-select-input-sample.stache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="57" lean-forward="false" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
           <folding />
         </state>
       </provider>

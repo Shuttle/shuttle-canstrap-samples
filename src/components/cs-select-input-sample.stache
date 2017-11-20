@@ -1,0 +1,5 @@
+<h1>cs-select-input</h1>
+<div>
+  value: {{value}}
+</div>
+<cs-select-input value:bind="value" options:bind="options" />
