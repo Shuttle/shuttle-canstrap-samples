@@ -1,0 +1,5 @@
+<h1>cs-button</h1>
+<h3>default</h3>
+<cs-button text="some button" />
+
+<h3>actions</h3>
