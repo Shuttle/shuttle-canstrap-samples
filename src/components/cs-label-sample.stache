@@ -1,4 +1,4 @@
-<h1>cs-label-sample</h1>
+<h1>cs-label</h1>
 <div>
     <cs-label label="This is a label" />
 </div>

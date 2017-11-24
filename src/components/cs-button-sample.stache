@@ -6,10 +6,15 @@
 <cs-button actions:from="actions" text="action" />
 <h1>cs-button-back</h1>
 <cs-button-back />
+<cs-button-back text="back" />
 <h1>cs-button-refresh</h1>
 <cs-button-refresh disabled:from="refreshing" click:from="@refresh" />
+<cs-button-refresh disabled:from="refreshing" click:from="@refresh" text="refresh" />
 {{#if refreshing}}
     <div class="alert alert-info mt-2" role="alert">
         (refreshing)
     </div>
 {{/if}}
+<h1>cs-button-group</h1>
+<cs-button-group buttons:from="buttons">
+</cs-button-group>
