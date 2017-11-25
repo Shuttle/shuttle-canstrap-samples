@@ -6,7 +6,7 @@
         <ul class="nav">
           {{#each (resources)}}
             <li>
-              <a href="{{routeUrl(resource=name})}}">{{name}}</a>
+              <a href="{{routeUrl(resource=name}}">{{name}}</a>
             </li>
           {{/each}}
         </ul>
@@ -14,6 +14,7 @@
     </div>
     <main id="application-container" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 csd-content" role="main">
         <cs-alerts />
+        <cs-modal modal-id='modal-confirmation' has-primary='true' primary-text='yes' dismiss-text='no' title='confirmation' message='modal.confirmation.message' primary-click:from='modal@confirmation@primaryClick'/>
         <div id="application-content"></div>
     </main>
   </div>
