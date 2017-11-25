@@ -37,19 +37,19 @@ export default Component.extend({
         return new ViewModel({
             buttons: [
                 {
-                    iconName: 'fa-fast-backward',
+                    iconNameClass: 'fa-fast-backward',
                     click: function(){
                         handler('fast-backward', 'player');
                     }
                 },
                 {
-                    iconName: 'fa-backward',
+                    iconNameClass: 'fa-backward',
                     click: function(){
                         handler('backward', 'player');
                     }
                 },
                 {
-                    iconName: 'fa-step-backward',
+                    iconNameClass: 'fa-step-backward',
                     click: function(){
                         handler('step-backward', 'player');
                     }
@@ -59,19 +59,19 @@ export default Component.extend({
                     disabled: true
                 },
                 {
-                    iconName: 'fa-step-forward',
+                    iconNameClass: 'fa-step-forward',
                     click: function(){
                         handler('step-forward', 'player');
                     }
                 },
                 {
-                    iconName: 'fa-forward',
+                    iconNameClass: 'fa-forward',
                     click: function(){
                         handler('forward', 'player');
                     }
                 },
                 {
-                    iconName: 'fa-fast-forward',
+                    iconNameClass: 'fa-fast-forward',
                     click: function(){
                         handler('fast-forward', 'player');
                     }
