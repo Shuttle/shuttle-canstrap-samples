@@ -1,2 +1,2 @@
 <h1>cs-validation</h1>
-<cs-validation message="This is a validation message." />
+<cs-validation message:from="validationMessage" />

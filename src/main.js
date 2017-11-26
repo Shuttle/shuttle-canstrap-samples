@@ -22,6 +22,7 @@ import "~/components/cs-button-group-sample";
 import "~/components/cs-button-submit-sample";
 import "~/components/cs-checkbox-sample";
 import "~/components/cs-fetching-sample";
+import "~/components/cs-form-group-sample";
 import "~/components/cs-label-sample";
 import "~/components/cs-input-sample";
 import "~/components/cs-page-title-sample";
@@ -59,6 +60,7 @@ var applicationViewModel = new ApplicationViewModel({
         { name: 'cs-button-submit' },
         { name: 'cs-checkbox' },
         { name: 'cs-fetching' },
+        { name: 'cs-form-group' },
         { name: 'cs-input' },
         { name: 'cs-label' },
         { name: 'cs-page-title' },
