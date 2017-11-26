@@ -14,6 +14,10 @@ var ViewModel = DefineMap.extend({
         type: 'boolean',
         value: false
     },
+    working: {
+        type: 'boolean',
+        value: false
+    },
     buttons: {Type: ButtonItemList},
     actions: {Type: ActionItemList},
     click: function (ev) {
@@ -26,6 +30,15 @@ var ViewModel = DefineMap.extend({
 
         setTimeout(() => {
             self.refreshing = false;
+        }, 1000);
+    },
+    submit: function(){
+        var self = this;
+
+        this.working = true;
+
+        setTimeout(() => {
+            self.working = false;
         }, 1000);
     }
 });
