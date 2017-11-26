@@ -1,7 +1,7 @@
 import DefineMap from 'can-define/map/';
 import Component from 'can-component';
-import view from './cs-select-input-sample.stache!';
-import {OptionItem,OptionItemList} from 'shuttle-canstrap/select-input/';
+import view from './cs-select-sample.stache!';
+import {OptionItem,OptionItemList} from 'shuttle-canstrap/select/';
 
 var ViewModel = DefineMap.extend({
   value: { type: 'string', value: ''},
@@ -9,7 +9,7 @@ var ViewModel = DefineMap.extend({
 });
 
 export default Component.extend({
-    tag: 'cs-select-input-sample',
+    tag: 'cs-select-sample',
     view,
     viewModel: new ViewModel({
         value: '',
