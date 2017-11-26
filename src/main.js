@@ -16,6 +16,10 @@ import stache from 'can-stache/';
 import "shuttle-canstrap";
 import "~/components/navigation";
 import "~/components/cs-button-sample";
+import "~/components/cs-button-back-sample";
+import "~/components/cs-button-refresh-sample";
+import "~/components/cs-button-group-sample";
+import "~/components/cs-button-submit-sample";
 import "~/components/cs-checkbox-sample";
 import "~/components/cs-fetching-sample";
 import "~/components/cs-label-sample";
@@ -48,6 +52,10 @@ var applicationViewModel = new ApplicationViewModel({
 
     resources: [
         { name: 'cs-button' },
+        { name: 'cs-button-back' },
+        { name: 'cs-button-refresh' },
+        { name: 'cs-button-group' },
+        { name: 'cs-button-submit' },
         { name: 'cs-checkbox' },
         { name: 'cs-fetching' },
         { name: 'cs-input' },

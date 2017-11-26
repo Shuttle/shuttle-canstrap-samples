@@ -1,0 +1,2 @@
+<h1>cs-button-group</h1>
+<cs-button-group buttons:from="buttons" />

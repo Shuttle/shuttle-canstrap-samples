@@ -4,26 +4,3 @@
 <cs-button text="icon button" click:from="@click" icon-name-class="fa-play-circle-o" element-class="btn-secondary" />
 <h3>actions</h3>
 <cs-button actions:from="actions" text="action" />
-<h1>cs-button-back</h1>
-<cs-button-back />
-<cs-button-back text="back" />
-<h1>cs-button-refresh</h1>
-<cs-button-refresh disabled:from="refreshing" click:from="@refresh" />
-<cs-button-refresh disabled:from="refreshing" click:from="@refresh" text="refresh" />
-{{#if refreshing}}
-    <div class="alert alert-info mt-2" role="alert">
-        (refreshing)
-    </div>
-{{/if}}
-<h1>cs-button-remove</h1>
-<h1>cs-button-group</h1>
-<cs-button-group buttons:from="buttons">
-</cs-button-group>
-<h1>cs-button-submit</h1>
-<cs-button-submit working:from="working" click:from="@submit" />
-<cs-button-submit working:from="working" click:from="@submit" text="submit" />
-{{#if working}}
-    <div class="alert alert-info mt-2" role="alert">
-        (working)
-    </div>
-{{/if}}

@@ -1,0 +1,8 @@
+<h1>cs-button-submit</h1>
+<cs-button-submit working:from="working" click:from="@submit" />
+<cs-button-submit working:from="working" click:from="@submit" text="submit" />
+{{#if working}}
+    <div class="alert alert-info mt-2" role="alert">
+        (working)
+    </div>
+{{/if}}
