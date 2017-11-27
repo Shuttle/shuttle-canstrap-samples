@@ -3,7 +3,7 @@
 <div>
   value: {{value}}
 </div>
-<cs-input value:bind="value" placeholder="enter the value" />
+<cs-input value:bind="value" placeholder="enter the value" element-class="testing" />
 <h3>checkbox  input</h3>
 <div>
   checked: {{checked}}

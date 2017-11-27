@@ -4,7 +4,6 @@
   checked: {{checked}}
 </div>
 <cs-checkbox checked:bind="checked" />
-
 <h3>custom</h3>
 <div>
     checked: {{checked}}

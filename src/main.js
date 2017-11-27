@@ -4,7 +4,7 @@ import 'bootstrap';
 import 'can-stache/helpers/route';
 
 import 'bootstrap/dist/css/bootstrap.css!';
-import 'font-awesome/css/font-awesome.css!';
+import 'font-awesome/css/font-awesome.css';
 import './main.css!';
 
 import DefineMap from "can-define/map/";
@@ -23,6 +23,8 @@ import "~/components/cs-button-submit-sample";
 import "~/components/cs-checkbox-sample";
 import "~/components/cs-fetching-sample";
 import "~/components/cs-form-group-sample";
+import "~/components/cs-form-input-sample";
+import "~/components/cs-form-select-sample";
 import "~/components/cs-label-sample";
 import "~/components/cs-input-sample";
 import "~/components/cs-page-title-sample";
@@ -61,6 +63,8 @@ var applicationViewModel = new ApplicationViewModel({
         { name: 'cs-checkbox' },
         { name: 'cs-fetching' },
         { name: 'cs-form-group' },
+        { name: 'cs-form-input' },
+        { name: 'cs-form-select' },
         { name: 'cs-input' },
         { name: 'cs-label' },
         { name: 'cs-page-title' },

@@ -1,5 +1,5 @@
 <h1>cs-form-group</h1>
-<span class="text-secondary">Toggle validation message:</span> <i class="fa {{validationIcon}}" aria-hidden="true" on:click="toggleValidationMessage"></i>
+<span class="text-secondary">Toggle validation message:</span> <i class="fa {{validationIcon()}}" aria-hidden="true" on:click="toggleValidationMessage"></i>
 <cs-form-group validationMessage:from="validationMessage">
     <p class="text-info">This paragraph is in the cs-form-group tag content.</p>
 </cs-form-group>
