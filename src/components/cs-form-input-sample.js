@@ -11,14 +11,6 @@ var ViewModel = DefineMap.extend({
         type: 'boolean',
         value: false
     },
-    validationChecked: {
-        type: 'boolean',
-        value: false
-    },
-    requiredChecked: {
-        type: 'boolean',
-        value: false
-    },
     validationMessage: {
         type: 'string',
         value: 'This is a validation message.',

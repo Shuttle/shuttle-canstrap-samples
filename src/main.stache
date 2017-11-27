@@ -6,7 +6,7 @@
         <ul class="nav">
           {{#each (resources)}}
             <li>
-              <a href="{{routeUrl(resource=name}}">{{name}}</a>
+              <a href="{{../getResourceUrl(.)}}">{{name}}</a>
             </li>
           {{/each}}
         </ul>
@@ -15,6 +15,14 @@
     <main id="application-container" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 csd-content" role="main">
         <cs-alerts />
         <cs-modal modal-id='modal-confirmation' has-primary='true' primary-text='yes' dismiss-text='no' title='confirmation' message='modal.confirmation.message' primary-click:from='modal@confirmation@primaryClick'/>
+        {{#if formOptionsAvailable}}
+            <div>
+                Validation: <cs-checkbox checked:bind="validationChecked" checked-class="fa-toggle-on" unchecked-class="fa-toggle-off" />
+            </div>
+            <div>
+                Required: <cs-checkbox checked:bind="requiredChecked" checked-class="fa-toggle-on" unchecked-class="fa-toggle-off" />
+            </div>
+        {{/if}}
         <div id="application-content"></div>
     </main>
   </div>

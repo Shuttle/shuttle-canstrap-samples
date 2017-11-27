@@ -1,28 +1,17 @@
 import Component from 'can-component';
 import DefineMap from 'can-define/map/';
 import view from './cs-form-group-sample.stache!';
+import applicationViewModel from '../state';
 
 var ViewModel = DefineMap.extend({
-    showValidationMessage: {
-        type: 'boolean',
-        value: true
-    },
     validationMessage: {
         type: 'string',
         value: 'This is a validation message.',
         get: function (value) {
-            return this.showValidationMessage
+            return applicationViewModel.validationChecked
                 ? value
                 : '';
         }
-    },
-    toggleValidationMessage: function () {
-        this.showValidationMessage = !this.showValidationMessage;
-    },
-    validationIcon: function () {
-        return this.showValidationMessage
-            ? 'fa-toggle-on'
-            : 'fa-toggle-off';
     }
 });
 

@@ -1,10 +1,4 @@
 <h1>cs-form-input</h1>
-<div>
-    Validation: <cs-checkbox checked:bind="validationChecked" checked-class="fa-toggle-on" unchecked-class="fa-toggle-off" />
-</div>
-<div>
-    Required: <cs-checkbox checked:bind="requiredChecked" checked-class="fa-toggle-on" unchecked-class="fa-toggle-off" />
-</div>
 <h3>text input</h3>
 <div>
     name: {{name}}
