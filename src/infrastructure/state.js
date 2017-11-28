@@ -50,10 +50,12 @@ let applicationViewModel = new ApplicationViewModel({
         { name: 'cs-form-group' },
         { name: 'cs-form-input' },
         { name: 'cs-form-select' },
+        { name: 'cs-form-textarea' },
         { name: 'cs-input' },
         { name: 'cs-label' },
         { name: 'cs-page-title' },
         { name: 'cs-select' },
+        { name: 'cs-textarea' },
         { name: 'cs-validation' }
     ],
 });

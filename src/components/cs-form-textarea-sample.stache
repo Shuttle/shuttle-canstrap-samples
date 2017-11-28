@@ -1,0 +1,6 @@
+<h1>cs-form-textarea</h1>
+<div>
+    value: {{value}}
+</div>
+<cs-form-textarea label="Value" value:bind="value" placeholder="enter the value" rows="5" columns="120"
+                  required:from="requiredChecked" validationMessage:from="validationMessage"/>

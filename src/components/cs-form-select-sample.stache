@@ -2,4 +2,5 @@
 <div>
     value: {{value}}
 </div>
-<cs-form-select label="Value" value:bind="value" options:bind="options" required:from="requiredChecked" validationMessage:from="validationMessage" />
+<cs-form-select label="Value" value:bind="value" options:bind="options" required:from="requiredChecked"
+                validationMessage:from="validationMessage"/>

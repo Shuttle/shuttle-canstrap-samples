@@ -1,0 +1,5 @@
+<h1>cs-textarea</h1>
+<div>
+  value: {{value}}
+</div>
+<cs-textarea value:bind="value" placeholder="enter the value" rows="5" columns="120" />
