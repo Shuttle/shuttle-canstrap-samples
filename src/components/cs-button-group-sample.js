@@ -1,7 +1,7 @@
 import DefineMap from 'can-define/map/';
 import Component from 'can-component';
 import view from './cs-button-group-sample.stache!';
-import {ButtonItemList} from 'shuttle-canstrap/button-group/';
+import {ButtonList} from 'shuttle-canstrap/button-group/';
 import {alerts} from 'shuttle-canstrap/alerts/';
 
 var handler = function(message, name){
@@ -9,7 +9,7 @@ var handler = function(message, name){
 }
 
 var ViewModel = DefineMap.extend({
-    buttons: {Type: ButtonItemList}
+    buttons: {Type: ButtonList}
 });
 
 export default Component.extend({

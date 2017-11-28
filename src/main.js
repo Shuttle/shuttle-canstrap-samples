@@ -31,6 +31,7 @@ import "~/components/cs-input-sample";
 import "~/components/cs-page-title-sample";
 import "~/components/cs-select-sample";
 import "~/components/cs-textarea-sample";
+import "~/components/cs-table-sample";
 import "~/components/cs-validation-sample";
 
 $('#application-container').html(template(applicationViewModel));

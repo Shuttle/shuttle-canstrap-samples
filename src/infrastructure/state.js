@@ -56,6 +56,7 @@ let applicationViewModel = new ApplicationViewModel({
         { name: 'cs-label' },
         { name: 'cs-page-title' },
         { name: 'cs-select' },
+        { name: 'cs-table' },
         { name: 'cs-textarea' },
         { name: 'cs-validation' }
     ],
