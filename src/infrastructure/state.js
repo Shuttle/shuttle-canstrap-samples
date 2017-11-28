@@ -47,6 +47,7 @@ let applicationViewModel = new ApplicationViewModel({
         { name: 'cs-button-submit' },
         { name: 'cs-checkbox' },
         { name: 'cs-fetching' },
+        { name: 'cs-form' },
         { name: 'cs-form-group' },
         { name: 'cs-form-input' },
         { name: 'cs-form-select' },
