@@ -1,8 +1,8 @@
 import Component from 'can-component';
-import DefineMap from 'can-define/map/';
+import FormViewModel from '../infrastructure/form-view-model';
 import view from './cs-form-input-sample.stache!';
 
-var ViewModel = DefineMap.extend({
+var ViewModel = FormViewModel.extend({
     name: {
         type: 'string',
         value: ''
@@ -10,15 +10,6 @@ var ViewModel = DefineMap.extend({
     checked: {
         type: 'boolean',
         value: false
-    },
-    validationMessage: {
-        type: 'string',
-        value: 'This is a validation message.',
-        get: function (value) {
-            return this.validationChecked
-                ? value
-                : '';
-        }
     }
 });
 

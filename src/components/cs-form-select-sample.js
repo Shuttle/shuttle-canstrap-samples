@@ -1,9 +1,9 @@
-import DefineMap from 'can-define/map/';
 import Component from 'can-component';
+import FormViewModel from '../infrastructure/form-view-model';
 import view from './cs-form-select-sample.stache!';
 import {OptionItem,OptionItemList} from 'shuttle-canstrap/select/';
 
-var ViewModel = DefineMap.extend({
+var ViewModel = FormViewModel.extend({
     value: { type: 'string', value: ''},
     options: { Type: OptionItemList }
 });
