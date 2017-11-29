@@ -9,12 +9,23 @@ var ViewModel = DefineMap.extend({
         Type: ColumnList,
         value: [
             {
-                columnTitle: 'Column-1'
+                columnTitle: 'Name',
+                attributeName: 'Name'
+            },
+            {
+                columnTitle: 'Surname',
+                attributeName: 'Surname'
             }
         ]
     },
     rows: {
-        Type: DefineList
+        Type: DefineList,
+        value: [
+            {
+                Name: "Mister",
+                Surname: "Resistor"
+            }
+        ]
     }
 });
 

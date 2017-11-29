@@ -1,2 +1,2 @@
 <h1>cs-table</h1>
-<cs-table columns:from="columns" />
+<cs-table columns:from="columns" rows:from="rows" />
