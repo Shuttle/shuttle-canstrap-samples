@@ -1,29 +1,35 @@
-<resource-navigation resources:from="resources" />
+<resource-navigation resources:from="resources"/>
 <div class="container-fluid">
-  <div class="row flex-xl-nowrap">
-    <div class="col-12 col-md-3 col-xl-2 csd-sidebar">
-      <nav class="csd-links">
-        <ul class="nav">
-          {{#each (resources)}}
-            <li>
-              <a href="{{../getResourceUrl(.)}}">{{name}}</a>
-            </li>
-          {{/each}}
-        </ul>
-      </nav>
+    <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 csd-sidebar d-none d-xl-block col-xl-2">
+            <nav class="csd-links">
+                <ul class="nav">
+                    {{#each (resources)}}
+                        <li>
+                            <a href="{{../getResourceUrl(.)}}">{{name}}</a>
+                        </li>
+                    {{/each}}
+                </ul>
+            </nav>
+        </div>
+        <main id="application-container" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 csd-content" role="main">
+            <cs-alerts/>
+            <cs-modal modal-id='modal-confirmation' has-primary='true' primary-text='yes' dismiss-text='no'
+                      title='confirmation' message='modal.confirmation.message'
+                      primary-click:from='modal@confirmation@primaryClick'/>
+            {{#if formOptionsAvailable}}
+                <div>
+                    Validation:
+                    <cs-checkbox checked:bind="validationChecked" checked-class="fa-toggle-on"
+                                 unchecked-class="fa-toggle-off"/>
+                </div>
+                <div>
+                    Required:
+                    <cs-checkbox checked:bind="requiredChecked" checked-class="fa-toggle-on"
+                                 unchecked-class="fa-toggle-off"/>
+                </div>
+            {{/if}}
+            <div id="application-content"></div>
+        </main>
     </div>
-    <main id="application-container" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 csd-content" role="main">
-        <cs-alerts />
-        <cs-modal modal-id='modal-confirmation' has-primary='true' primary-text='yes' dismiss-text='no' title='confirmation' message='modal.confirmation.message' primary-click:from='modal@confirmation@primaryClick'/>
-        {{#if formOptionsAvailable}}
-            <div>
-                Validation: <cs-checkbox checked:bind="validationChecked" checked-class="fa-toggle-on" unchecked-class="fa-toggle-off" />
-            </div>
-            <div>
-                Required: <cs-checkbox checked:bind="requiredChecked" checked-class="fa-toggle-on" unchecked-class="fa-toggle-off" />
-            </div>
-        {{/if}}
-        <div id="application-content"></div>
-    </main>
-  </div>
 </div>

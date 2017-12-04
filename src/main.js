@@ -18,6 +18,7 @@ import "~/components/cs-button-sample";
 import "~/components/cs-button-back-sample";
 import "~/components/cs-button-refresh-sample";
 import "~/components/cs-button-group-sample";
+import "~/components/cs-button-remove-sample";
 import "~/components/cs-button-submit-sample";
 import "~/components/cs-checkbox-sample";
 import "~/components/cs-fetching-sample";

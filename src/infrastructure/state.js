@@ -44,6 +44,7 @@ let applicationViewModel = new ApplicationViewModel({
         { name: 'cs-button-back' },
         { name: 'cs-button-refresh' },
         { name: 'cs-button-group' },
+        { name: 'cs-button-remove' },
         { name: 'cs-button-submit' },
         { name: 'cs-checkbox' },
         { name: 'cs-fetching' },
