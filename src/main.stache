@@ -14,19 +14,19 @@
         </div>
         <main id="application-container" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 csd-content" role="main">
             <cs-alerts/>
-            <cs-modal modal-id='modal-confirmation' has-primary='true' primary-text='yes' dismiss-text='no'
-                      title='confirmation' message='modal.confirmation.message'
-                      primary-click:from='modal@confirmation@primaryClick'/>
+            <cs-modal modalId:from="'modal-confirmation'" primaryText:from="'yes'" dismissText:from="'no'"
+                      title:from="'confirmation'" message:from="'modal.confirmation.message'"
+                      primaryClick:from='modal@confirmation@primaryClick'/>
             {{#if formOptionsAvailable}}
                 <div>
                     Validation:
-                    <cs-checkbox checked:bind="validationChecked" checked-class="fa-toggle-on"
-                                 unchecked-class="fa-toggle-off"/>
+                    <cs-checkbox checked:bind="validationChecked" checkedClass:from="'fa-toggle-on'"
+                                 uncheckedClass:from="'fa-toggle-off'"/>
                 </div>
                 <div>
                     Required:
-                    <cs-checkbox checked:bind="requiredChecked" checked-class="fa-toggle-on"
-                                 unchecked-class="fa-toggle-off"/>
+                    <cs-checkbox checked:bind="requiredChecked" checkedClass:from="'fa-toggle-on'"
+                                 uncheckedClass:from="'fa-toggle-off'"/>
                 </div>
             {{/if}}
             <div id="application-content"></div>
