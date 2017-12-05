@@ -2,11 +2,18 @@ import DefineMap from 'can-define/map/';
 import Component from 'can-component';
 import view from './cs-button-remove-sample.stache!';
 import {alerts} from 'shuttle-canstrap/alerts/';
+import options from 'shuttle-canstrap';
 
 var ViewModel = DefineMap.extend({
     customConfirmationChecked: {
         type: 'boolean',
-        value: false
+        value: false,
+        set: function(value){
+            if (!value){
+                options.button.remove.confirmation = undefined;
+                return;
+            }
+        }
     },
     removing: {
         type: 'boolean',

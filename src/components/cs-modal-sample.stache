@@ -1,0 +1,10 @@
+<h1>cs-modal</h1>
+<cs-button click:from="@show" text="show"/>
+<cs-modal
+        modal-id="modal-sample"
+        title="Sample Modal"
+        message="This demonstrates the use of a simple modal dialog."
+        primary-text="ok"
+        primaryClick:from="@primaryClick"
+        dismiss-text="close"
+/>

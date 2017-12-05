@@ -55,6 +55,7 @@ let applicationViewModel = new ApplicationViewModel({
         { name: 'cs-form-textarea' },
         { name: 'cs-input' },
         { name: 'cs-label' },
+        { name: 'cs-modal' },
         { name: 'cs-page-title' },
         { name: 'cs-select' },
         { name: 'cs-table' },

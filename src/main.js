@@ -28,6 +28,7 @@ import "~/components/cs-form-input-sample";
 import "~/components/cs-form-select-sample";
 import "~/components/cs-form-textarea-sample";
 import "~/components/cs-label-sample";
+import "~/components/cs-modal-sample";
 import "~/components/cs-input-sample";
 import "~/components/cs-page-title-sample";
 import "~/components/cs-select-sample";
