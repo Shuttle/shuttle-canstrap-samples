@@ -1,8 +1,8 @@
 <h1>cs-button-remove</h1>
 <div>
     Custom confirmation:
-    <cs-checkbox checked:bind="customConfirmationChecked" checked-class="fa-toggle-on"
-                 unchecked-class="fa-toggle-off"/>
+    <cs-checkbox checked:bind="customConfirmationChecked" checkedClass:from="'fa-toggle-on'"
+                 uncheckedClass:from="'fa-toggle-off'"/>
 </div>
 <cs-button-remove click:from="@remove" disabled:from="removing" />
 {{#if removing}}

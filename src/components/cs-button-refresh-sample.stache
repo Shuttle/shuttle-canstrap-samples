@@ -1,6 +1,6 @@
 <h1>cs-button-refresh</h1>
 <cs-button-refresh disabled:from="refreshing" click:from="@refresh" />
-<cs-button-refresh disabled:from="refreshing" click:from="@refresh" text="refresh" />
+<cs-button-refresh disabled:from="refreshing" click:from="@refresh" text:from="'refresh'" />
 {{#if refreshing}}
     <div class="alert alert-info mt-2" role="alert">
         (refreshing)

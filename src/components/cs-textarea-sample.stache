@@ -2,4 +2,4 @@
 <div>
   value: {{value}}
 </div>
-<cs-textarea value:bind="value" placeholder="enter the value" rows="5" columns="120" />
+<cs-textarea value:bind="value" placeholder:from="'enter the value'" rows:from="'5'" columns:from="'120'" />

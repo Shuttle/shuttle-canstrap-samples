@@ -1,7 +1,7 @@
 <h1>cs-label</h1>
 <div>
-    <cs-label label="This is a label" />
+    <cs-label label:from="'This is a label'" />
 </div>
 <div>
-    <cs-label label="This is a required label" required="true" />
+    <cs-label label:from="'This is a required label'" required:from="'true'" />
 </div>

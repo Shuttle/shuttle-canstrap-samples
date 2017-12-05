@@ -1,6 +1,6 @@
 <h1>cs-button</h1>
 <h3>default</h3>
-<cs-button text="some button" click:from="@click" element-class="btn-primary" />
-<cs-button text="icon button" click:from="@click" icon-name-class="fa-play-circle-o" element-class="btn-secondary" />
+<cs-button text:from="'some button'" click:from="@click" elementClass:from="'btn-primary'" />
+<cs-button text:from="'icon button'" click:from="@click" iconNameClass:from="'fa-play-circle-o'" elementClass:from="'btn-secondary'" />
 <h3>actions</h3>
-<cs-button actions:from="actions" text="action" />
+<cs-button actions:from="actions" text:from="'action'" />

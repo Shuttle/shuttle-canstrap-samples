@@ -3,9 +3,9 @@
 <div>
   value: {{value}}
 </div>
-<cs-input value:bind="value" placeholder="enter the value" element-class="testing" />
+<cs-input value:bind="value" placeholder:from="'enter the value'" elementClass:from="'testing'" />
 <h3>checkbox  input</h3>
 <div>
   checked: {{checked}}
 </div>
-<cs-input checked:bind="checked" type="checkbox" />
+<cs-input checked:bind="checked" type:from="'checkbox'" />

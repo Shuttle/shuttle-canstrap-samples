@@ -3,9 +3,11 @@
 <div>
     name: {{name}}
 </div>
-<cs-form-input label="Name" required:from="requiredChecked" value:bind="name" validationMessage:from="validationMessage" />
-<h3>checkbox  input</h3>
+<cs-form-input label:from="'Name'" required:from="requiredChecked" value:bind="name"
+               validationMessage:from="validationMessage"/>
+<h3>checkbox input</h3>
 <div>
     checked: {{checked}}
 </div>
-<cs-form-input label="Checked" required:from="requiredChecked" checked:bind="checked" type="checkbox" validationMessage:from="validationMessage" />
+<cs-form-input label:from="'Checked'" required:from="requiredChecked" checked:bind="checked" type:from="'checkbox'"
+               validationMessage:from="validationMessage"/>
