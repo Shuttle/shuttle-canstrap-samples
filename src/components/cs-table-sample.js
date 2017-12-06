@@ -9,12 +9,26 @@ var ViewModel = DefineMap.extend({
         Type: ColumnList,
         value: [
             {
+                columnTitle: 'Disabled',
+                columnType: 'view',
+                view: '<cs-checkbox checked:bind="disabled" checkedClass:from="\'fa-toggle-on\'" uncheckedClass:from="\'fa-toggle-off\'"/>'
+            },
+            {
                 columnTitle: 'Name',
                 attributeName: 'Name'
             },
             {
                 columnTitle: 'Surname',
                 attributeName: 'Surname'
+            },
+            {
+                columnTitle: 'Is Disabled?',
+                attributeName: 'disabled'
+            },
+            {
+                columnTitle: 'Remove',
+                columnType: 'view',
+                view: '<cs-button-remove disabled:from="disabled" click:from="remove" />'
             }
         ]
     },
@@ -23,7 +37,18 @@ var ViewModel = DefineMap.extend({
         value: [
             {
                 Name: "Mister",
-                Surname: "Resistor"
+                Surname: "Resistor",
+                disabled: false
+            },
+            {
+                Name: "Ohm",
+                Surname: "Resistor",
+                disabled: false
+            },
+            {
+                Name: "Another",
+                Surname: "Resistor",
+                disabled: false
             }
         ]
     }
