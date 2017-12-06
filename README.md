@@ -6,7 +6,7 @@ Provides samples showing how to use [shuttle-canstrap](https://www.npmjs.com/pac
 
 ## Getting started
 
-Install the packages from the samples folder (where `package.json` resides):
+Open a command prompt and install the packages from the samples folder (where `package.json` resides):
 
 ```
 npm install
@@ -17,3 +17,5 @@ Then host the samples folder using any appropriate `http` server.  If you have i
 ```
 http-server
 ```
+
+Once the server starts navigate to `http://127.0.0.1:8080/default.html` to view the site.
