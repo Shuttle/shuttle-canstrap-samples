@@ -1,4 +1,4 @@
-<resource-navigation resources:from="resources"/>
+<resource-navigation list:from="resources"/>
 <div class="container-fluid">
     <div class="row flex-xl-nowrap">
         <div class="col-12 col-md-3 csd-sidebar d-none d-xl-block col-xl-2">
