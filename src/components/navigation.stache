@@ -8,6 +8,7 @@
         <ul class="navbar-nav">
             <cs-nav-dropdown text:from="'cs-nav-dropdown'" list:from="list"/>
         </ul>
+        <cs-nav-dropdown text:from="'GitHub Issues'" href:from="''"/>
         <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
             <li class="nav-item">
                 <a class="nav-link p-2" href="https://github.com/Shuttle/shuttle-canstrap" target="_blank"
