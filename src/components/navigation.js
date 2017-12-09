@@ -6,11 +6,6 @@ import {DropdownMap, DropdownList} from 'shuttle-canstrap/nav-dropdown/';
 import route from 'can-route/';
 
 var ViewModel = DefineMap.extend({
-    map: {
-        value: {
-            text: 'cs-nav-dropdown'
-        }
-    },
     list: {
         get: function (value) {
             var result = new DropdownList();
