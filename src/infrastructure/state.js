@@ -40,6 +40,7 @@ let applicationViewModel = new ApplicationViewModel({
         return route.url({resource: resource.name});
     },
     resources: [
+        { name: 'can-validate' },
         { name: 'cs-button' },
         { name: 'cs-button-back' },
         { name: 'cs-button-refresh' },

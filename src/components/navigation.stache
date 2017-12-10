@@ -7,8 +7,9 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <cs-nav-dropdown text:from="'cs-nav-dropdown'" list:from="list"/>
+            <cs-nav-dropdown text:from="'sample issues'" href:from="'https://github.com/Shuttle/shuttle-canstrap-samples/issues'"/>
+            <cs-nav-dropdown text:from="'canstrap issues'" href:from="'https://github.com/Shuttle/shuttle-canstrap/issues'"/>
         </ul>
-        <cs-nav-dropdown text:from="'GitHub Issues'" href:from="''"/>
         <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
             <li class="nav-item">
                 <a class="nav-link p-2" href="https://github.com/Shuttle/shuttle-canstrap" target="_blank"

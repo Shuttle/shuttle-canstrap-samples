@@ -14,6 +14,7 @@ import {routeViewModel} from './infrastructure/state';
 
 import "shuttle-canstrap";
 import "~/components/navigation";
+import "~/can-validate/can-validate-sample";
 import "~/components/cs-button-sample";
 import "~/components/cs-button-back-sample";
 import "~/components/cs-button-refresh-sample";

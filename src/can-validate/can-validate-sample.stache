@@ -1,0 +1,6 @@
+<h1>can-validate</h1>
+<div>
+    username: {{username}}
+</div>
+<cs-form-input label:from="'Username'" required:from="requiredChecked" value:bind="username"
+               vm:errors:from="errors()" errorAttribute:from="'username'"/>
