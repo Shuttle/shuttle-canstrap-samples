@@ -1,9 +1,9 @@
 import Component from 'can-component';
-import FormViewModel from '../infrastructure/form-view-model';
+import ValidationViewModel from 'shuttle-canstrap/infrastructure/validation-view-model';
 import view from './can-validate-sample.stache';
 import validate from 'can-define-validate-validatejs';
 
-var ViewModel = FormViewModel.extend({
+var ViewModel = ValidationViewModel.extend({
     username: {
         type: 'string',
         value: '',

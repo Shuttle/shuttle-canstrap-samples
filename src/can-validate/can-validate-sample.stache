@@ -2,5 +2,8 @@
 <div>
     username: {{username}}
 </div>
+<div>
+    hasErrors(): {{hasErrors()}}
+</div>
 <cs-form-input label:from="'Username'" required:from="requiredChecked" value:bind="username"
                vm:errors:from="errors()" errorAttribute:from="'username'"/>
