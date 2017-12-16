@@ -9,16 +9,8 @@ var ViewModel = DefineMap.extend({
         value: ''
     },
     options: {
-        Type: OptionList
-    }
-});
-
-export default Component.extend({
-    tag: 'cs-select-sample',
-    view,
-    viewModel: new ViewModel({
-        value: '',
-        options: function () {
+        Type: OptionList,
+        get: function(){
             return [
                 {
                     value: '1',
@@ -34,5 +26,11 @@ export default Component.extend({
                 }
             ];
         }
-    })
+    }
+});
+
+export default Component.extend({
+    tag: 'cs-select-sample',
+    view,
+    ViewModel
 });

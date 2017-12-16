@@ -2,4 +2,4 @@
 <div>
   value: {{value}}
 </div>
-<cs-select value:bind="value" options:bind="options()" />
+<cs-select value:bind="value" options:from="options" />
