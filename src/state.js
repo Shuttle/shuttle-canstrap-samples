@@ -1,20 +1,32 @@
 import DefineMap from "can-define/map/";
 import DefineList from "can-define/list/";
 import route from 'can-route/';
-import stache from 'can-stache/'
+import stache from 'can-stache/';
+import guard from 'shuttle-guard';
+import canstrap from 'shuttle-canstrap';
 
 var ApplicationViewModel = DefineMap.extend({
-    resources: {Type: DefineList},
+    resources: {
+        Type: DefineList
+    },
     modal: {
-        Value: DefineMap.extend({
+        Type: DefineMap.extend({
             confirmation: {
-                Value: DefineMap.extend({
+                Type: DefineMap.extend({
                     primaryClick: {
                         type: '*'
                     },
                     message: {
                         type: 'string',
                         value: ''
+                    },
+                    show(options) {
+                        guard.againstUndefined(options, "options");
+
+                        this.message = options.message || 'No \'message\' passed in the confirmation options.';
+                        this.primaryClick = options.primaryClick;
+
+                        $('#modal-confirmation').modal({show: true});
                     }
                 })
             }
@@ -39,7 +51,8 @@ let applicationViewModel = new ApplicationViewModel({
     },
     formOptionsAvailable: {
         type: 'boolean',
-        value: true
+        value:
+            true
     },
     validationChecked: {
         type: 'boolean',
