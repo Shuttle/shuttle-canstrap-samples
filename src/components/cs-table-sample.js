@@ -26,7 +26,7 @@ var ViewModel = DefineMap.extend({
             },
             {
                 columnTitle: 'Remove',
-                view: '<cs-button-remove disabled:from="disabled" click:from="remove" />'
+                view: '<cs-button-remove disabled:from="disabled" click:from="remove" elementClass:from="\'btn-sm\'"/>'
             }
         ]
     },
