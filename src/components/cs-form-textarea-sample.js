@@ -1,4 +1,4 @@
-import FormViewModel from '../infrastructure/form-view-model';
+import FormViewModel from '../form-view-model';
 import Component from 'can-component';
 import view from './cs-form-textarea-sample.stache!';
 

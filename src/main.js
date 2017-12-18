@@ -9,8 +9,8 @@ import './main.css!';
 
 import template from "./main.stache!";
 import route from 'can-route/';
-import applicationViewModel from './infrastructure/state';
-import {routeViewModel} from './infrastructure/state';
+import applicationViewModel from './state';
+import {routeViewModel} from './state';
 
 import "shuttle-canstrap";
 import "~/components/navigation";

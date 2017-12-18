@@ -11,7 +11,7 @@ var SampleRowMap = DefineMap.extend({
     },
 });
 
-var SampleRowList = DefineList({
+var SampleRowList = DefineList.extend({
     '#': SampleRowMap
 });
 

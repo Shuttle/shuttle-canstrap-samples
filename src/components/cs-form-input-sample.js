@@ -1,5 +1,5 @@
 import Component from 'can-component';
-import FormViewModel from '../infrastructure/form-view-model';
+import FormViewModel from '../form-view-model';
 import view from './cs-form-input-sample.stache!';
 
 var ViewModel = FormViewModel.extend({
