@@ -3,6 +3,17 @@ import DefineList from 'can-define/list/';
 import Component from 'can-component';
 import view from './cs-table-sample.stache!';
 import {ColumnList} from 'shuttle-canstrap/table/';
+import {alerts} from 'shuttle-canstrap/alerts/';
+
+var SampleRowMap = DefineMap.extend({
+    remove(){
+        alerts.show({ message: 'Remove button clicked on \'' + this.name + ' ' + this.surname + '\'.', name: 'remove-button-clicked'});
+    },
+});
+
+var SampleRowList = DefineList({
+    '#': SampleRowMap
+});
 
 var ViewModel = DefineMap.extend({
     columns: {
@@ -14,11 +25,11 @@ var ViewModel = DefineMap.extend({
             },
             {
                 columnTitle: 'Name',
-                attributeName: 'Name'
+                attributeName: 'name'
             },
             {
                 columnTitle: 'Surname',
-                attributeName: 'Surname'
+                attributeName: 'surname'
             },
             {
                 columnTitle: 'Is Disabled?',
@@ -26,26 +37,26 @@ var ViewModel = DefineMap.extend({
             },
             {
                 columnTitle: 'Remove',
-                view: '<cs-button-remove disabled:from="disabled" click:from="remove" elementClass:from="\'btn-sm\'"/>'
+                view: '<cs-button-remove disabled:from="disabled" click:from="@remove" elementClass:from="\'btn-sm\'"/>'
             }
         ]
     },
     rows: {
-        Type: DefineList,
+        Type: SampleRowList,
         value: [
             {
-                Name: "Mister",
-                Surname: "Resistor",
+                name: "Mister",
+                surname: "Resistor",
                 disabled: false
             },
             {
-                Name: "Ohm",
-                Surname: "Resistor",
+                name: "Ohm",
+                surname: "Resistor",
                 disabled: false
             },
             {
-                Name: "Another",
-                Surname: "Resistor",
+                name: "Another",
+                surname: "Resistor",
                 disabled: false
             }
         ]
