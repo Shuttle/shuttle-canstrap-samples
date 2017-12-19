@@ -24,11 +24,11 @@ var ViewModel = DefineMap.extend({
         value: [
             {
                 columnTitle: 'Navigate',
-                view: '<cs-button text:from="\'Items\'" click:from="@items" elementClass:from="\'btn-sm\'"/>'
+                stache: '<cs-button text:from="\'Items\'" click:from="@items" elementClass:from="\'btn-sm\'"/>'
             },
             {
                 columnTitle: 'Disabled',
-                view: '<cs-checkbox checked:bind="disabled" checkedClass:from="\'fa-toggle-on\'" uncheckedClass:from="\'fa-toggle-off\'"/>'
+                stache: '<cs-checkbox checked:bind="disabled" checkedClass:from="\'fa-toggle-on\'" uncheckedClass:from="\'fa-toggle-off\'"/>'
             },
             {
                 columnTitle: 'Name',
@@ -44,7 +44,7 @@ var ViewModel = DefineMap.extend({
             },
             {
                 columnTitle: 'Remove',
-                view: '<cs-button-remove disabled:from="disabled" click:from="@remove" elementClass:from="\'btn-sm\'"/>'
+                stache: '<cs-button-remove disabled:from="disabled" click:from="@remove" elementClass:from="\'btn-sm\'"/>'
             }
         ]
     },
