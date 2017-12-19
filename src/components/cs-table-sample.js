@@ -9,6 +9,9 @@ var SampleRowMap = DefineMap.extend({
     remove(){
         alerts.show({ message: 'Remove button clicked on \'' + this.name + ' ' + this.surname + '\'.', name: 'remove-button-clicked'});
     },
+    items(){
+        alerts.show({ message: 'Items navigation clicked on \'' + this.name + ' ' + this.surname + '\'.', name: 'items-navigation-clicked'});
+    }
 });
 
 var SampleRowList = DefineList.extend({
@@ -19,6 +22,10 @@ var ViewModel = DefineMap.extend({
     columns: {
         Type: ColumnList,
         value: [
+            {
+                columnTitle: 'Navigate',
+                view: '<cs-button text:from="\'Items\'" click:from="@items" elementClass:from="\'btn-sm\'"/>'
+            },
             {
                 columnTitle: 'Disabled',
                 view: '<cs-checkbox checked:bind="disabled" checkedClass:from="\'fa-toggle-on\'" uncheckedClass:from="\'fa-toggle-off\'"/>'
