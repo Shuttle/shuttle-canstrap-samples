@@ -1,4 +1,4 @@
 <h1>cs-page-title</h1>
 <div>
-    <cs-page-title title:from="'This is a page title'" />
+    <cs-page-title title:from="'This is a page title'" localize:from="'false'"/>
 </div>
