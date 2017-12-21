@@ -1,11 +1,5 @@
 <h1>cs-input</h1>
-<h3>text input</h3>
 <div>
   value: {{value}}
 </div>
 <cs-input value:bind="value" placeholder:from="'enter the value'" elementClass:from="'testing'" />
-<h3>checkbox  input</h3>
-<div>
-  checked: {{checked}}
-</div>
-<cs-input checked:bind="checked" type:from="'checkbox'" />

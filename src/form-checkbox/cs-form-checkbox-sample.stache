@@ -1,0 +1,6 @@
+<h1>cs-form-checkbox</h1>
+<div>
+    checked: {{checked}}
+</div>
+<cs-form-checkbox label:from="'Checked'" required:from="requiredChecked" checked:bind="checked"
+                  validationMessage:from="validationMessage"/>

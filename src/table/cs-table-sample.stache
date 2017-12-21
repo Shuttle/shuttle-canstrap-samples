@@ -1,0 +1,4 @@
+<h1>cs-table</h1>
+<cs-form-checkbox checked:bind="hasTableRowClick" label:from="'Table Row Click'" />
+<cs-form-checkbox checked:bind="hasRowClick" label:from="'Row Click'" />
+<cs-table columns:from="columns" rows:from="rows" rowClick:from="@rowClick" />

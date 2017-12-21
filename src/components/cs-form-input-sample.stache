@@ -1,13 +1,6 @@
 <h1>cs-form-input</h1>
-<h3>text input</h3>
 <div>
     name: {{name}}
 </div>
 <cs-form-input label:from="'Name'" required:from="requiredChecked" value:bind="name"
-               validationMessage:from="validationMessage"/>
-<h3>checkbox input</h3>
-<div>
-    checked: {{checked}}
-</div>
-<cs-form-input label:from="'Checked'" required:from="requiredChecked" checked:bind="checked" type:from="'checkbox'"
                validationMessage:from="validationMessage"/>
