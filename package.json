@@ -36,7 +36,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.0.0-beta.2",
+    "bootstrap": "^4.0.0",
     "can-component": "^3.3.7",
     "can-compute": "^3.3.10",
     "can-connect": "^1.5.12",
