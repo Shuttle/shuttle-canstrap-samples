@@ -1,5 +1,0 @@
-<h1>cs-input</h1>
-<div>
-  value: {{value}}
-</div>
-<cs-input value:bind="value" placeholder:from="'enter the value'" elementClass:from="'testing'" />

@@ -41,11 +41,11 @@ var ViewModel = DefineMap.extend({
     },
     hasTableRowClick: {
         type: 'boolean',
-        value: false
+        default: false
     },
     hasRowClick: {
         type: 'boolean',
-        value: false,
+        default: false,
         set(value) {
             var self= this;
 
@@ -66,7 +66,7 @@ var ViewModel = DefineMap.extend({
     },
     columns: {
         Type: ColumnList,
-        value: [
+        default: [
             {
                 columnTitle: 'Navigate',
                 columnClass: 'col-1',
@@ -101,7 +101,7 @@ var ViewModel = DefineMap.extend({
     },
     rows: {
         Type: SampleRowList,
-        value: [
+        default: [
             {
                 name: "Mister",
                 surname: "Resistor",

@@ -18,7 +18,7 @@ var ApplicationViewModel = DefineMap.extend({
                     },
                     message: {
                         type: 'string',
-                        value: ''
+                        default: ''
                     },
                     show(options) {
                         guard.againstUndefined(options, "options");
@@ -51,16 +51,15 @@ let applicationViewModel = new ApplicationViewModel({
     },
     formOptionsAvailable: {
         type: 'boolean',
-        value:
-            true
+        default: true
     },
     validationChecked: {
         type: 'boolean',
-        value: false
+        default: false
     },
     requiredChecked: {
         type: 'boolean',
-        value: false
+        default: false
     },
     init: function () {
         this.route.on('resource', function (ev, newVal, oldVal) {

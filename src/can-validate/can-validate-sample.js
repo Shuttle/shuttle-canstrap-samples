@@ -6,7 +6,7 @@ import validate from 'can-define-validate-validatejs';
 var ViewModel = ValidationViewModel.extend({
     username: {
         type: 'string',
-        value: '',
+        default: '',
         validate: {
             presence: true
         }

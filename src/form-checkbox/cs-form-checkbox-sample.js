@@ -5,11 +5,11 @@ import view from './cs-form-checkbox-sample.stache!';
 var ViewModel = FormViewModel.extend({
     name: {
         type: 'string',
-        value: ''
+        default: ''
     },
     checked: {
         type: 'boolean',
-        value: false
+        default: false
     }
 });
 

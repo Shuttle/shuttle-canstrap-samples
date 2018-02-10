@@ -1,43 +1,17 @@
 import DefineMap from 'can-define/map/';
 import Component from 'can-component';
-import view from './cs-button-sample.stache!';
+import view from './cs-button-sample.stache';
 import {ActionList} from 'shuttle-canstrap/button/';
 import {alerts} from 'shuttle-canstrap/alerts/';
 
-var handler = function(message, name){
-    alerts.show({ message: message, name: name});
+var handler = function(message){
+    alerts.show({ message: message + ' (' + new Date() + ')', name: 'click'});
 }
 
 var ViewModel = DefineMap.extend({
-    refreshing: {
-        type: 'boolean',
-        value: false
-    },
-    working: {
-        type: 'boolean',
-        value: false
-    },
     actions: {Type: ActionList},
     click: function (ev) {
         handler('click');
-    },
-    refresh: function(){
-        var self = this;
-
-        this.refreshing = true;
-
-        setTimeout(() => {
-            self.refreshing = false;
-        }, 1000);
-    },
-    submit: function(){
-        var self = this;
-
-        this.working = true;
-
-        setTimeout(() => {
-            self.working = false;
-        }, 1000);
     }
 });
 
