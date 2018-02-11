@@ -39,6 +39,7 @@ import "~/select/cs-select-sample";
 import "~/textarea/cs-textarea-sample";
 import "~/validation/cs-validation-sample";
 
+
 $('#application-container').html(template(applicationViewModel));
 
 route.data = routeViewModel;
