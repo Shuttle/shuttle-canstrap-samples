@@ -82,6 +82,7 @@ let applicationViewModel = new ApplicationViewModel({
         {name: 'cs-button-remove'},
         {name: 'cs-button-submit'},
         {name: 'cs-checkbox'},
+        {name: 'cs-collapse'},
         {name: 'cs-fetching'},
         {name: 'cs-form'},
         {name: 'cs-form-checkbox'},

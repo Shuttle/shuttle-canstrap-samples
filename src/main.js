@@ -26,6 +26,7 @@ import "~/button-group/cs-button-group-sample";
 import "~/button-remove/cs-button-remove-sample";
 import "~/button-submit/cs-button-submit-sample";
 import "~/checkbox/cs-checkbox-sample";
+import "~/collapse/cs-collapse-sample";
 import "~/fetching/cs-fetching-sample";
 import "~/form-group/cs-form-group-sample";
 import "~/form-input/cs-form-input-sample";

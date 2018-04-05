@@ -1,0 +1,13 @@
+<h1>cs-collapse</h1>
+<cs-form-input label:from="'Header'" value:bind="header"/>
+<cs-form-checkbox label:from="'Collapsed'" checked:bind="collapsed"/>
+<h3>default</h3>
+<cs-collapse text:from="header" collapsed:from="collapsed">
+    Default sample content.
+</cs-collapse>
+<h3>custom</h3>
+<cs-collapse text:from="header" collapsed:from="collapsed" collapsedIconClass:from="'fa-plus'"
+             expandedIconClass:from="'fa-minus'">
+    Custom sample content.
+</cs-collapse>
+
