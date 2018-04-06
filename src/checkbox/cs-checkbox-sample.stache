@@ -8,4 +8,4 @@
 <div>
     checked: {{checked}}
 </div>
-<cs-checkbox checked:bind="checked" checkedClass:from="'fa-check-circle-o'" uncheckedClass:from="'fa-circle-o'" />
+<cs-checkbox checked:bind="checked" checkedIconClass:from="'fa-check-circle-o'" uncheckedIconClass:from="'fa-circle-o'" />
