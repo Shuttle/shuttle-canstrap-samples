@@ -10,4 +10,15 @@
              expandedIconClass:from="'fa-minus'">
     Custom sample content.
 </cs-collapse>
-
+<h3>accordion</h3>
+<div id="accordion">
+    <cs-collapse text:from="'Collapse 1'" accordionId:from="'accordion'">
+        Custom sample content 1.
+    </cs-collapse>
+    <cs-collapse text:from="'Collapse 2'" accordionId:from="'accordion'">
+        Custom sample content 2.
+    </cs-collapse>
+    <cs-collapse text:from="'Collapse 3'" accordionId:from="'accordion'">
+        Custom sample content 3.
+    </cs-collapse>
+</div>
