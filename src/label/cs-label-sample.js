@@ -4,8 +4,7 @@ import view from './cs-label-sample.stache!';
 import {alerts} from 'shuttle-canstrap/alerts/';
 
 var ViewModel = DefineMap.extend({
-    click(e) {
-        e.stopPropagation();
+    click: function(e) {
         alerts.show({ message: "Label has been clicked.", name: "label-click"});
     }
 });

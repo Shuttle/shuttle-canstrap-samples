@@ -1,6 +1,6 @@
 <h1>cs-label</h1>
 <div>
-    <cs-label label:from="'This is a label (click me)'" click:from="@click(scope.event)" />
+    <cs-label label:from="'This is a label (click me)'" click:from="@click" />
 </div>
 <div>
     <cs-label label:from="'This is a required label'" required:from="'true'" />
