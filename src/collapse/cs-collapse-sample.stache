@@ -2,12 +2,12 @@
 <cs-form-input label:from="'Header'" value:bind="header"/>
 <cs-form-checkbox label:from="'Collapsed'" checked:bind="collapsed"/>
 <h3>default</h3>
-<cs-collapse text:from="header" collapsed:from="collapsed">
+<cs-collapse text:from="header" collapsed:from="collapsed" elementClass:from="'mb-2'">
     Default sample content.
 </cs-collapse>
 <h3>custom</h3>
 <cs-collapse text:from="header" collapsed:from="collapsed" collapsedIconClass:from="'fa-plus'"
-             expandedIconClass:from="'fa-minus'">
+             expandedIconClass:from="'fa-minus'" elementClass:from="'mb-2'" collapsed:from="'true'">
     Custom sample content.
 </cs-collapse>
 <h3>accordion</h3>
@@ -15,7 +15,7 @@
     <cs-collapse text:from="'Collapse 1'" accordionId:from="'accordion'">
         Custom sample content 1.
     </cs-collapse>
-    <cs-collapse text:from="'Collapse 2'" accordionId:from="'accordion'">
+    <cs-collapse text:from="'Collapse 2'" accordionId:from="'accordion'" collapsed:from="'false'">
         Custom sample content 2.
     </cs-collapse>
     <cs-collapse text:from="'Collapse 3'" accordionId:from="'accordion'">
