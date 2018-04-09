@@ -70,7 +70,7 @@ var ViewModel = DefineMap.extend({
             {
                 columnTitle: 'Navigate',
                 columnClass: 'col-1',
-                stache: '<cs-button text:from="\'Items\'" click:from="@items" elementClass:from="\'btn-sm\'"/>'
+                stache: '<cs-button text:from="\'Items\'" click:from="items" elementClass:from="\'btn-sm\'"/>'
             },
             {
                 columnTitle: 'Disabled',
@@ -95,7 +95,7 @@ var ViewModel = DefineMap.extend({
             {
                 columnTitle: 'Remove',
                 columnClass: 'col-1',
-                stache: '<cs-button-remove disabled:from="disabled" click:from="@remove" elementClass:from="\'btn-sm\'"/>'
+                stache: '<cs-button-remove disabled:from="disabled" click:from="remove" elementClass:from="\'btn-sm\'"/>'
             }
         ]
     },

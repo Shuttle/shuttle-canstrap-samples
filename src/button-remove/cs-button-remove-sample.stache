@@ -4,7 +4,7 @@
     <cs-checkbox checked:bind="customConfirmationChecked" checkedClass:from="'fa-toggle-on'"
                  uncheckedClass:from="'fa-toggle-off'"/>
 </div>
-<cs-button-remove click:from="@remove" disabled:from="removing" />
+<cs-button-remove click:from="remove" disabled:from="removing" />
 {{#if removing}}
     <div class="alert alert-info mt-2" role="alert">
         (removing)
