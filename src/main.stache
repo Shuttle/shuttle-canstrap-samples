@@ -1,18 +1,10 @@
 <resource-navigation list:from="resources"/>
 <div class="container-fluid">
     <div class="row flex-xl-nowrap">
-        <div class="col-12 col-md-3 csd-sidebar d-none d-xl-block col-xl-2">
-            <nav class="csd-links">
-                <ul class="nav">
-                    {{#each (resources)}}
-                        <li>
-                            <a href="{{../getResourceUrl(.)}}">{{name}}</a>
-                        </li>
-                    {{/each}}
-                </ul>
-            </nav>
+        <div class="navbar-expand-lg col-md-3 float-left pl-0 pr-0 collapse-width navbar-collapse show" id="sidebar-collapse">
+            <cs-sidebar list:from="sidebar" id:from="'sidebar'" togglerId:from="'sidebarToggler'" />
         </div>
-        <main id="application-container" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 csd-content" role="main">
+        <main id="application-container" class="col-md-9 p-3 main" role="main">
             <cs-alerts/>
             <cs-modal modalId:from="'modal-confirmation'" primaryText:from="'yes'" dismissText:from="'no'"
                       title:from="'Confirmation'" message:from="'You are about to remove the item.  Continue?'"
