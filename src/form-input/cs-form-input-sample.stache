@@ -4,3 +4,10 @@
 </div>
 <cs-form-input label:from="'Name'" required:from="requiredChecked" value:bind="name"
                validationMessage:from="validationMessage"/>
+
+<h1>cs-form-input (datetime)</h1>
+<div>
+    value: {{datetime}}
+</div>
+<cs-form-input label:from="'Date/Time'" required:from="requiredChecked" value:bind="datetime"
+               validationMessage:from="validationMessage" type:from="'datetime'"/>
