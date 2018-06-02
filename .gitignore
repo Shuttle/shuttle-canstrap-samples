@@ -62,3 +62,5 @@ typings/
 
 # User-specific stuff:
 .idea
+dev-bundle.css
+dev-bundle.js
