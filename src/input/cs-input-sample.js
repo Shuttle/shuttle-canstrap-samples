@@ -6,9 +6,6 @@ var ViewModel = DefineMap.extend({
     value: {
         type: 'string',
         default: ''
-    },
-    datetime: {
-        type: 'date'
     }
 });
 

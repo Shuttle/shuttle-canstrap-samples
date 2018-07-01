@@ -79,22 +79,27 @@ let applicationViewModel = new ApplicationViewModel({
         this.addSidebarItem(form, 'cs-form-checkbox');
         this.addSidebarItem(form, 'cs-form-group');
         this.addSidebarItem(form, 'cs-form-input');
+        this.addSidebarItem(form, 'cs-form-input-datetime');
         this.addSidebarItem(form, 'cs-form-select');
         this.addSidebarItem(form, 'cs-form-textarea');
+        
+        var buttons = new ItemList();
+
+        this.addSidebarItem(buttons, 'cs-button');
+        this.addSidebarItem(buttons, 'cs-button-back');
+        this.addSidebarItem(buttons, 'cs-button-refresh');
+        this.addSidebarItem(buttons, 'cs-button-group');
+        this.addSidebarItem(buttons, 'cs-button-remove');
+        this.addSidebarItem(buttons, 'cs-button-submit');
 
         var core = new ItemList();
 
         this.addSidebarItem(core, 'can-validate');
-        this.addSidebarItem(core, 'cs-button');
-        this.addSidebarItem(core, 'cs-button-back');
-        this.addSidebarItem(core, 'cs-button-refresh');
-        this.addSidebarItem(core, 'cs-button-group');
-        this.addSidebarItem(core, 'cs-button-remove');
-        this.addSidebarItem(core, 'cs-button-submit');
         this.addSidebarItem(core, 'cs-checkbox');
         this.addSidebarItem(core, 'cs-collapse');
         this.addSidebarItem(core, 'cs-fetching');
         this.addSidebarItem(core, 'cs-input');
+        this.addSidebarItem(core, 'cs-input-datetime');
         this.addSidebarItem(core, 'cs-label');
         this.addSidebarItem(core, 'cs-modal');
         this.addSidebarItem(core, 'cs-page-title');
@@ -104,6 +109,7 @@ let applicationViewModel = new ApplicationViewModel({
         this.addSidebarItem(core, 'cs-validation');
 
         this.sidebar.push({ text: 'Form', list: form });
+        this.sidebar.push({ text: 'Buttons', list: buttons });
         this.sidebar.push({ text: 'Core', list: core });
     },
     addSidebarItem: function (list, resource) {

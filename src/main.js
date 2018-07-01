@@ -2,12 +2,10 @@ import $ from 'jquery';
 import 'popper.js';
 import 'bootstrap';
 import 'moment';
-import 'tempusdominus';
 import 'can-stache-route-helpers';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
-import 'tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.css';
 import './main.css!';
 
 import template from "./main.stache";
@@ -33,16 +31,17 @@ import "~/collapse/cs-collapse-sample";
 import "~/fetching/cs-fetching-sample";
 import "~/form-group/cs-form-group-sample";
 import "~/form-input/cs-form-input-sample";
+import "~/form-input-datetime/cs-form-input-datetime-sample";
 import "~/form-select/cs-form-select-sample";
 import "~/form-textarea/cs-form-textarea-sample";
 import "~/label/cs-label-sample";
 import "~/modal/cs-modal-sample";
 import "~/input/cs-input-sample";
+import "~/input-datetime/cs-input-datetime-sample";
 import "~/page-title/cs-page-title-sample";
 import "~/select/cs-select-sample";
 import "~/textarea/cs-textarea-sample";
 import "~/validation/cs-validation-sample";
-
 
 $('#application-container').html(template(applicationViewModel));
 

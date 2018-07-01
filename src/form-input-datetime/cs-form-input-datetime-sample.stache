@@ -1,0 +1,18 @@
+<h1>cs-form-input-datetime (datetime)</h1>
+<div>
+    value: {{datetime}}
+</div>
+<cs-form-input-datetime label:from="'Date/Time'" required:from="requiredChecked" value:bind="datetime"
+               validationMessage:from="validationMessage" type:from="'datetime'"/>
+<h1>cs-form-input-datetime (date)</h1>
+<div>
+    value: {{date}}
+</div>
+<cs-form-input-datetime label:from="'Date'" required:from="requiredChecked" value:bind="date"
+               validationMessage:from="validationMessage" type:from="'date'"/>
+<h1>cs-form-input-datetime (time)</h1>
+<div>
+    value: {{time}}
+</div>
+<cs-form-input-datetime label:from="'Time'" required:from="requiredChecked" value:bind="time"
+               validationMessage:from="validationMessage" type:from="'time'"/>

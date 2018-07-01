@@ -1,11 +1,5 @@
 <h1>cs-input</h1>
 <div>
-  value: {{value}}
+    value: {{value}}
 </div>
-<cs-input value:bind="value" placeholder:from="'enter the value'" />
-
-<h1>cs-input (datetime)</h1>
-<div>
-    value: {{datetime}}
-</div>
-<cs-input value:bind="datetime" placeholder:from="'enter the date/time'" type:from="'datetime'" />
+<cs-input value:bind="value" placeholder:from="'enter the value'"/>

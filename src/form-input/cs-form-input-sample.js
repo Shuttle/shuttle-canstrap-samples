@@ -6,13 +6,6 @@ var ViewModel = FormViewModel.extend({
     name: {
         type: 'string',
         default: ''
-    },
-    datetime: {
-        type: 'date'
-    },
-    checked: {
-        type: 'boolean',
-        default: false
     }
 });
 

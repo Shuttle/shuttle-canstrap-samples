@@ -64,3 +64,9 @@ typings/
 .idea
 dev-bundle.css
 dev-bundle.js
+dev-bundlejs
+dev-bundle.min.js
+dev-bundle.max.js
+dev-bundle-min-working.js
+dev-bundle-full.js
+dist
