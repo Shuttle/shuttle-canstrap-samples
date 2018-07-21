@@ -1,0 +1,3 @@
+<h1>cs-autocomplete</h1>
+<h3>default</h3>
+<cs-autocomplete endpoint:raw="words/search/{search}" />

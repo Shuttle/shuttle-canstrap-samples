@@ -95,6 +95,7 @@ let applicationViewModel = new ApplicationViewModel({
         var core = new ItemList();
 
         this.addSidebarItem(core, 'can-validate');
+        this.addSidebarItem(core, 'cs-autocomplete');
         this.addSidebarItem(core, 'cs-checkbox');
         this.addSidebarItem(core, 'cs-collapse');
         this.addSidebarItem(core, 'cs-fetching');

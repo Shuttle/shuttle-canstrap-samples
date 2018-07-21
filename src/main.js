@@ -12,14 +12,17 @@ import template from "./main.stache";
 import route from 'can-route/';
 import applicationViewModel from './state';
 import {routeViewModel} from './state';
+import {options as apiOptions} from 'shuttle-can-api';
+
+apiOptions.url = 'http://api/';
 
 import "shuttle-canstrap";
+import "./fixture.js";
 
 import "~/navigation/navigation";
 import "~/can-validate/can-validate-sample";
-import "~/form/cs-form-sample";
-import "~/form-checkbox/cs-form-checkbox-sample";
-import "~/table/cs-table-sample";
+
+import "~/autocomplete/cs-autocomplete-sample";
 import "~/button/cs-button-sample";
 import "~/button-back/cs-button-back-sample";
 import "~/button-refresh/cs-button-refresh-sample";
@@ -29,6 +32,8 @@ import "~/button-submit/cs-button-submit-sample";
 import "~/checkbox/cs-checkbox-sample";
 import "~/collapse/cs-collapse-sample";
 import "~/fetching/cs-fetching-sample";
+import "~/form/cs-form-sample";
+import "~/form-checkbox/cs-form-checkbox-sample";
 import "~/form-group/cs-form-group-sample";
 import "~/form-input/cs-form-input-sample";
 import "~/form-input-datetime/cs-form-input-datetime-sample";
@@ -40,6 +45,7 @@ import "~/input/cs-input-sample";
 import "~/input-datetime/cs-input-datetime-sample";
 import "~/page-title/cs-page-title-sample";
 import "~/select/cs-select-sample";
+import "~/table/cs-table-sample";
 import "~/textarea/cs-textarea-sample";
 import "~/validation/cs-validation-sample";
 
