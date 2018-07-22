@@ -76,6 +76,7 @@ let applicationViewModel = new ApplicationViewModel({
         var form = new ItemList();
 
         this.addSidebarItem(form, 'cs-form');
+        this.addSidebarItem(form, 'cs-form-autocomplete');
         this.addSidebarItem(form, 'cs-form-checkbox');
         this.addSidebarItem(form, 'cs-form-group');
         this.addSidebarItem(form, 'cs-form-input');

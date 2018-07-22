@@ -33,6 +33,7 @@ import "~/checkbox/cs-checkbox-sample";
 import "~/collapse/cs-collapse-sample";
 import "~/fetching/cs-fetching-sample";
 import "~/form/cs-form-sample";
+import "~/form-autocomplete/cs-form-autocomplete-sample";
 import "~/form-checkbox/cs-form-checkbox-sample";
 import "~/form-group/cs-form-group-sample";
 import "~/form-input/cs-form-input-sample";
