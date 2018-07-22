@@ -1,5 +1,5 @@
-<h1>cs-autocomplete</h1>
-<h3>POST (default)</h3>
-<cs-form-autocomplete label:raw="Words" endpoint:raw="words/search/{search}" />
+<h1>cs-form-autocomplete</h1>
+<h3>POST (default/mapped)</h3>
+<cs-form-autocomplete label:raw="Words" endpoint:raw="words/search" mapper:from="mapper" />
 <h3>GET</h3>
 <cs-form-autocomplete label:raw="Words" endpoint:raw="words/search/{search}" method:raw="get" />

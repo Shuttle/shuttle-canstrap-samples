@@ -14,7 +14,7 @@ import applicationViewModel from './state';
 import {routeViewModel} from './state';
 import {options as apiOptions} from 'shuttle-can-api';
 
-apiOptions.url = 'http://api/';
+apiOptions.url = window.location.origin;
 
 import "shuttle-canstrap";
 import "./fixture.js";

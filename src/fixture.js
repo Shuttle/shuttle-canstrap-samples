@@ -40,6 +40,8 @@ var search = function(match){
 }
 
 fixture({
+	"OPTIONS /words/search": function () {
+	},
 	"GET /words/search/{search}": function (call) {
 		return search(call.data.search);
 	},
