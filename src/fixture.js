@@ -16,27 +16,34 @@ Sed scelerisque varius mauris. Nulla eget mi eget metus sagittis egestas id nec 
 	}
 );
 
+var search = function(match){
+	var count = 0;
+	return {
+		data: $.map(words.filter(function (item) {
+			if (count > 9){
+				return undefined;
+			}
+
+			var result = (item.indexOf(match) > -1) ? item : undefined;
+
+			if (!!result){
+				count++;
+			}
+
+			return result;
+		}), function (item) {
+			return {
+				text: item
+			}
+		})
+	};
+}
+
 fixture({
 	"GET /words/search/{search}": function (call) {
-		var count = 0;
-		return {
-			data: $.map(words.filter(function (item) {
-				if (count > 9){
-					return undefined;
-				}
-
-				var result = (item.indexOf(call.data.search) > -1) ? item : undefined;
-
-				if (!!result){
-					count++;
-				}
-
-				return result;
-			}), function (item) {
-				return {
-					text: item
-				}
-			})
-		};
+		return search(call.data.search);
+	},
+	"POST /words/search": function (call) {
+		return search(call.data.search);
 	}
 })
