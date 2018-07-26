@@ -1,5 +1,6 @@
 <h1>cs-autocomplete</h1>
+selected: {{map.text}}
 <h3>POST (default)</h3>
-<cs-autocomplete endpoint:raw="words/search" />
+<cs-autocomplete map:bind="map" endpoint:raw="words/search" />
 <h3>GET (mapped)</h3>
-<cs-autocomplete endpoint:raw="words/search/{search}" method:raw="get" mapper:from="mapper"/>
+<cs-autocomplete map:bind="map" endpoint:raw="words/search/{search}" method:raw="get" mapper:from="mapper"/>
