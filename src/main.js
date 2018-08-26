@@ -2,10 +2,12 @@ import $ from 'jquery';
 import 'popper.js';
 import 'bootstrap';
 import 'moment';
+import 'tempusdominus';
 import 'can-stache-route-helpers';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
+import 'tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.css';
 import './main.css!';
 
 import template from "./main.stache";
