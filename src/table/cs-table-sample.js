@@ -29,6 +29,15 @@ var SampleRowList = DefineList.extend({
 });
 
 var ViewModel = DefineMap.extend({
+    disabled: {
+        type: 'boolean',
+        set(value){
+            each(this.rows, function(item){
+                item.disabled = value;
+            });
+            return value;
+        }
+    },
     rowClick(row) {
         if (!this.hasTableRowClick) {
             return;
@@ -66,58 +75,63 @@ var ViewModel = DefineMap.extend({
     },
     columns: {
         Type: ColumnList,
-        default: [
-            {
-                columnTitle: 'Navigate',
-                columnClass: 'col-1',
-                stache: '<cs-button text:from="\'Items\'" click:from="items" elementClass:from="\'btn-sm\'"/>'
-            },
-            {
-                columnTitle: 'Disabled',
-                columnClass: 'col-1',
-                stache: '<cs-checkbox checked:bind="disabled" checkedClass:from="\'fa-toggle-on\'" uncheckedClass:from="\'fa-toggle-off\'"/>'
-            },
-            {
-                columnTitle: 'Name',
-                columnClass: 'col',
-                attributeName: 'name'
-            },
-            {
-                columnTitle: 'Surname',
-                columnClass: 'col',
-                attributeName: 'surname'
-            },
-            {
-                columnTitle: 'Disabled?',
-                columnClass: 'col-1',
-                attributeName: 'disabled'
-            },
-            {
-                columnTitle: 'Remove',
-                columnClass: 'col-1',
-                stache: '<cs-button-remove disabled:from="disabled" click:from="remove" elementClass:from="\'btn-sm\'"/>'
-            }
-        ]
+        default(){
+            return [
+                {
+                    columnTitle: 'Navigate',
+                    columnClass: 'col-1',
+                    stache: '<cs-button text:from="\'Items\'" click:from="items" elementClass:from="\'btn-sm\'"/>'
+                },
+                {
+                    data: this,
+                    columnStache: '<cs-checkbox checked:bind="disabled" checkedClass:from="\'fa-toggle-on\'" uncheckedClass:from="\'fa-toggle-off\'"/> Disabled',
+                    columnClass: 'col-1',
+                    stache: '<cs-checkbox checked:bind="disabled" checkedClass:from="\'fa-toggle-on\'" uncheckedClass:from="\'fa-toggle-off\'"/>'
+                },
+                {
+                    columnTitle: 'Name',
+                    columnClass: 'col',
+                    attributeName: 'name'
+                },
+                {
+                    columnTitle: 'Surname',
+                    columnClass: 'col',
+                    attributeName: 'surname'
+                },
+                {
+                    columnTitle: 'Disabled?',
+                    columnClass: 'col-1',
+                    attributeName: 'disabled'
+                },
+                {
+                    columnTitle: 'Remove',
+                    columnClass: 'col-1',
+                    stache: '<cs-button-remove disabled:from="disabled" click:from="remove" elementClass:from="\'btn-sm\'"/>'
+                }
+            ];
+        }
     },
     rows: {
         Type: SampleRowList,
-        default: [
-            {
-                name: "Mister",
-                surname: "Resistor",
-                disabled: false
-            },
-            {
-                name: "Ohm",
-                surname: "Resistor",
-                disabled: false
-            },
-            {
-                name: "Another",
-                surname: "Resistor",
-                disabled: false
-            }
-        ]
+        default() {
+            return [
+                {
+                    name: "Mister",
+                    surname: "Resistor",
+                    disabled: false
+                },
+                {
+                    name: "Ohm",
+                    surname: "Resistor",
+                    disabled: false
+                },
+                {
+                    name: "Another",
+                    surname: "Resistor",
+                    disabled: false
+                }
+            ];
+        }
     }
 });
 
