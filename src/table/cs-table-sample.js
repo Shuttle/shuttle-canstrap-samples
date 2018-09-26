@@ -2,25 +2,29 @@ import DefineMap from 'can-define/map/';
 import DefineList from 'can-define/list/';
 import Component from 'can-component';
 import view from './cs-table-sample.stache';
-import {ColumnList} from 'shuttle-canstrap/table/';
-import {alerts} from 'shuttle-canstrap/alerts/';
+import { ColumnList } from 'shuttle-canstrap/table/';
+import { alerts } from 'shuttle-canstrap/alerts/';
 import each from 'can-util/js/each/';
+import stache from 'can-stache/';
 
 var SampleRowMap = DefineMap.extend({
     click: {
         type: '*'
     },
-    remove() {
+    remove () {
         alerts.show({
             message: 'Remove button clicked on \'' + this.name + ' ' + this.surname + '\'.',
             name: 'remove-button-clicked'
         });
     },
-    items() {
+    items () {
         alerts.show({
             message: 'Items navigation clicked on \'' + this.name + ' ' + this.surname + '\'.',
             name: 'items-navigation-clicked'
         });
+    },
+    viewCall: {
+        type: 'any'
     }
 });
 
@@ -31,14 +35,14 @@ var SampleRowList = DefineList.extend({
 var ViewModel = DefineMap.extend({
     disabled: {
         type: 'boolean',
-        set(value){
-            each(this.rows, function(item){
+        set (value) {
+            each(this.rows, function (item) {
                 item.disabled = value;
             });
             return value;
         }
     },
-    rowClick(row) {
+    rowClick (row) {
         if (!this.hasTableRowClick) {
             return;
         }
@@ -55,8 +59,8 @@ var ViewModel = DefineMap.extend({
     hasRowClick: {
         type: 'boolean',
         default: false,
-        set(value) {
-            var self= this;
+        set (value) {
+            var self = this;
 
             each(this.rows, function (row) {
                 row.click = value
@@ -73,18 +77,26 @@ var ViewModel = DefineMap.extend({
             return value;
         }
     },
+    viewCall (row) {
+        alerts.show({
+            message: 'Clicked "view-call" button on \'' + row.name + ' ' + row.surname + '\'.',
+            name: 'view-call-clicked'
+        });
+    },
     columns: {
         Type: ColumnList,
-        default(){
+        default () {
+            const self = this;
+
             return [
                 {
                     columnTitle: 'Navigate',
                     columnClass: 'col-1',
-                    stache: '<cs-button text:from="\'Items\'" click:from="items" elementClass:from="\'btn-sm\'"/>'
+                    stache: '<cs-button text:raw="Items" click:from="items" elementClass:from="\'btn-sm\'"/>'
                 },
                 {
                     data: this,
-                    columnStache: '<cs-checkbox checked:bind="disabled" checkedClass:from="\'fa-toggle-on\'" uncheckedClass:from="\'fa-toggle-off\'"/> Disabled',
+                    headerStache: '<cs-checkbox checked:bind="disabled" checkedClass:from="\'fa-toggle-on\'" uncheckedClass:from="\'fa-toggle-off\'"/> Disabled',
                     columnClass: 'col-1',
                     stache: '<cs-checkbox checked:bind="disabled" checkedClass:from="\'fa-toggle-on\'" uncheckedClass:from="\'fa-toggle-off\'"/>'
                 },
@@ -107,27 +119,38 @@ var ViewModel = DefineMap.extend({
                     columnTitle: 'Remove',
                     columnClass: 'col-1',
                     stache: '<cs-button-remove disabled:from="disabled" click:from="remove" elementClass:from="\'btn-sm\'"/>'
+                },
+                {
+                    columnTitle: 'View-Call',
+                    columnClass: 'col-1',
+                    view: function (row) {
+                        row.viewCall = function() {
+                            self.viewCall(row);
+                        };
+
+                        return stache('<cs-button text:raw="view-call" disabled:from="disabled" click:from="viewCall" elementClass:from="\'btn-sm\'"/>')(row);
+                    }
                 }
             ];
         }
     },
     rows: {
         Type: SampleRowList,
-        default() {
+        default () {
             return [
                 {
-                    name: "Mister",
-                    surname: "Resistor",
+                    name: 'Mister',
+                    surname: 'Resistor',
                     disabled: false
                 },
                 {
-                    name: "Ohm",
-                    surname: "Resistor",
+                    name: 'Ohm',
+                    surname: 'Resistor',
                     disabled: false
                 },
                 {
-                    name: "Another",
-                    surname: "Resistor",
+                    name: 'Another',
+                    surname: 'Resistor',
                     disabled: false
                 }
             ];
