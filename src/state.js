@@ -1,11 +1,12 @@
-import DefineMap from "can-define/map/";
-import DefineList from "can-define/list/";
-import route from 'can-route/';
-import stache from 'can-stache/';
+import {route, DefineMap, DefineList, stache} from 'can';
 import guard from 'shuttle-guard';
 import {ItemList} from 'shuttle-canstrap/sidebar/';
+import {Alerts} from 'shuttle-canstrap/alerts/';
 
 var ApplicationViewModel = DefineMap.extend({
+    alerts: {
+        Default: Alerts
+    },
     resources: {
         Default: DefineList
     },
@@ -83,7 +84,7 @@ let applicationViewModel = new ApplicationViewModel({
         this.addSidebarItem(form, 'cs-form-input-datetime');
         this.addSidebarItem(form, 'cs-form-select');
         this.addSidebarItem(form, 'cs-form-textarea');
-        
+
         var buttons = new ItemList();
 
         this.addSidebarItem(buttons, 'cs-button');
@@ -110,12 +111,12 @@ let applicationViewModel = new ApplicationViewModel({
         this.addSidebarItem(core, 'cs-textarea');
         this.addSidebarItem(core, 'cs-validation');
 
-        this.sidebar.push({ text: 'Form', list: form });
-        this.sidebar.push({ text: 'Buttons', list: buttons });
-        this.sidebar.push({ text: 'Core', list: core });
+        this.sidebar.push({text: 'Form', list: form});
+        this.sidebar.push({text: 'Buttons', list: buttons});
+        this.sidebar.push({text: 'Core', list: core});
     },
     addSidebarItem: function (list, resource) {
-        var item = { text: resource, href: route.url({resource: resource}) }
+        var item = {text: resource, href: route.url({resource: resource})}
 
         list.push(item);
 

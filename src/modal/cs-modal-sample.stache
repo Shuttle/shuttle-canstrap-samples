@@ -1,5 +1,5 @@
 <h1>cs-modal</h1>
-<cs-button click:from="show" text:from="'show'"/>
+<cs-button click:from="show" text:raw="show"/>
 <cs-modal
         modalId:from="'modal-sample'"
         title:from="'Sample Modal'"

@@ -1,10 +1,7 @@
-import DefineMap from 'can-define/map/';
-import DefineList from 'can-define/list/';
-import Component from 'can-component';
+import { Component, DefineMap, DefineList, Reflect } from 'can';
 import view from './cs-table-sample.stache';
 import { ColumnList } from 'shuttle-canstrap/table/';
-import { alerts } from 'shuttle-canstrap/alerts/';
-import each from 'can-util/js/each/';
+import state from '~/state';
 import stache from 'can-stache/';
 
 var SampleRowMap = DefineMap.extend({
@@ -12,13 +9,13 @@ var SampleRowMap = DefineMap.extend({
         type: '*'
     },
     remove () {
-        alerts.show({
+        state.alerts.add({
             message: 'Remove button clicked on \'' + this.name + ' ' + this.surname + '\'.',
             name: 'remove-button-clicked'
         });
     },
     items () {
-        alerts.show({
+        state.alerts.add({
             message: 'Items navigation clicked on \'' + this.name + ' ' + this.surname + '\'.',
             name: 'items-navigation-clicked'
         });
@@ -36,7 +33,7 @@ var ViewModel = DefineMap.extend({
     disabled: {
         type: 'boolean',
         set (value) {
-            each(this.rows, function (item) {
+            Reflect.each(this.rows, function (item) {
                 item.disabled = value;
             });
             return value;
@@ -47,7 +44,7 @@ var ViewModel = DefineMap.extend({
             return;
         }
 
-        alerts.show({
+        state.alerts.add({
             message: 'Table row clicked on \'' + row.name + ' ' + row.surname + '\'.',
             name: 'table-row-clicked'
         });
@@ -62,10 +59,10 @@ var ViewModel = DefineMap.extend({
         set (value) {
             var self = this;
 
-            each(this.rows, function (row) {
+            Reflect.each(this.rows, function (row) {
                 row.click = value
                     ? function () {
-                        alerts.show({
+                        state.alerts.add({
                             message: 'Row clicked on \'' + row.name + ' ' + row.surname + '\'.',
                             name: 'row-clicked'
                         });
@@ -78,7 +75,7 @@ var ViewModel = DefineMap.extend({
         }
     },
     viewCall (row) {
-        alerts.show({
+        state.alerts.add({
             message: 'Clicked "view-call" button on \'' + row.name + ' ' + row.surname + '\'.',
             name: 'view-call-clicked'
         });
@@ -128,7 +125,7 @@ var ViewModel = DefineMap.extend({
                             self.viewCall(row);
                         };
 
-                        return stache('<cs-button text:raw="view-call" disabled:from="disabled" click:from="viewCall" elementClass:from="\'btn-sm\'"/>')(row);
+                        return stache('<cs-button text:raw="view-call" disabled:from="disabled" click:from="viewCall" elementClass:raw="btn-secondary btn-sm"/>')(row);
                     }
                 }
             ];

@@ -5,7 +5,9 @@ import view from './cs-validation-sample.stache!';
 export default Component.extend({
     tag: 'cs-validation-sample',
     view,
-    viewModel: new DefineMap({
-        validationMessage: 'This is a validation message.'
-    })
+    viewModel: function(){
+        return new DefineMap({
+            validationMessage: 'This is a validation message.'
+        });
+    }
 });

@@ -2,10 +2,10 @@ import DefineMap from 'can-define/map/';
 import Component from 'can-component';
 import view from './cs-button-sample.stache';
 import {ActionList} from 'shuttle-canstrap/button/';
-import {alerts} from 'shuttle-canstrap/alerts/';
+import state from '~/state';
 
 var handler = function(message){
-    alerts.show({ message: message + ' (' + new Date() + ')', name: 'click'});
+    state.alerts.add({ message: message + ' (' + new Date() + ')', name: 'click'});
 }
 
 var ViewModel = DefineMap.extend({

@@ -1,11 +1,10 @@
-import DefineMap from 'can-define/map/';
-import Component from 'can-component';
+import {Component,DefineMap} from 'can';
 import view from './cs-label-sample.stache!';
-import {alerts} from 'shuttle-canstrap/alerts/';
+import state from '~/state';
 
 var ViewModel = DefineMap.extend({
     click: function(e) {
-        alerts.show({ message: "Label has been clicked.", name: "label-click"});
+        state.alerts.add({ message: "Label has been clicked.", name: "label-click"});
     }
 });
 

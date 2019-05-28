@@ -8,7 +8,7 @@
     <main id="application-container" class="flex-grow m-0 p-0 main" role="main">
         <resource-navigation list:from="resources"/>
         <div class="m-3">
-            <cs-alerts/>
+            <cs-alerts alerts:from="alerts"/>
             <cs-modal modalId:from="'modal-confirmation'" primaryText:from="'yes'" dismissText:from="'no'"
                       title:from="'Confirmation'" message:from="'You are about to remove the item.  Continue?'"
                       primaryClick:from='modal.confirmation.primaryClick'/>

@@ -2,10 +2,10 @@ import DefineMap from 'can-define/map/';
 import Component from 'can-component';
 import view from './cs-button-group-sample.stache!';
 import {ButtonList} from 'shuttle-canstrap/button-group/';
-import {alerts} from 'shuttle-canstrap/alerts/';
+import state from '~/state';
 
 var handler = function(message, name){
-    alerts.show({ message: message, name: name});
+    state.alerts.add({ message: message, name: name});
 }
 
 var ViewModel = DefineMap.extend({
@@ -19,18 +19,21 @@ export default Component.extend({
         return new ViewModel({
             buttons: [
                 {
+                    iconClass: 'fas',
                     iconNameClass: 'fa-fast-backward',
                     click: function () {
                         handler('fast-backward', 'player');
                     }
                 },
                 {
+                    iconClass: 'fas',
                     iconNameClass: 'fa-backward',
                     click: function () {
                         handler('backward', 'player');
                     }
                 },
                 {
+                    iconClass: 'fas',
                     iconNameClass: 'fa-step-backward',
                     click: function () {
                         handler('step-backward', 'player');
@@ -41,18 +44,21 @@ export default Component.extend({
                     disabled: true
                 },
                 {
+                    iconClass: 'fas',
                     iconNameClass: 'fa-step-forward',
                     click: function () {
                         handler('step-forward', 'player');
                     }
                 },
                 {
+                    iconClass: 'fas',
                     iconNameClass: 'fa-forward',
                     click: function () {
                         handler('forward', 'player');
                     }
                 },
                 {
+                    iconClass: 'fas',
                     iconNameClass: 'fa-fast-forward',
                     click: function () {
                         handler('fast-forward', 'player');

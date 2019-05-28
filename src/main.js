@@ -3,20 +3,21 @@ import 'popper.js';
 import 'bootstrap';
 import 'moment';
 import 'tempusdominus';
-import 'can-stache-route-helpers';
+import '@fortawesome/fontawesome-svg-core';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import 'font-awesome/css/font-awesome.css';
 import 'tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.css';
 import './main.css!';
 
 import template from "./main.stache";
-import route from 'can-route/';
+import {route} from 'can';
 import applicationViewModel from './state';
 import {routeViewModel} from './state';
 import {options as apiOptions} from 'shuttle-can-api';
 
-apiOptions.url = window.location.origin;
+import {config as faConfiguration, library, dom} from '@fortawesome/fontawesome-svg-core'
+import {fas} from '@fortawesome/free-solid-svg-icons'
+import {far} from '@fortawesome/free-regular-svg-icons'
 
 import "shuttle-canstrap";
 import "./fixture.js";
@@ -51,6 +52,13 @@ import "~/select/cs-select-sample";
 import "~/table/cs-table-sample";
 import "~/textarea/cs-textarea-sample";
 import "~/validation/cs-validation-sample";
+
+apiOptions.url = window.location.origin;
+faConfiguration.autoReplaceSvg = 'nest';
+
+library.add(fas, far)
+
+dom.watch();
 
 $('#application-container').html(template(applicationViewModel));
 
