@@ -1,5 +1,4 @@
-import DefineMap from 'can-define/map/';
-import Component from 'can-component';
+import { DefineMap, Component } from 'can';
 import view from './cs-button-remove-sample.stache!';
 import {alerts} from 'shuttle-canstrap/alerts/';
 import canstrap from 'shuttle-canstrap';

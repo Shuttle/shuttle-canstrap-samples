@@ -1,5 +1,4 @@
-import DefineMap from 'can-define/map/';
-import Component from 'can-component';
+import { DefineMap, Component } from 'can';
 import view from './cs-input-datetime-sample.stache!';
 
 var ViewModel = DefineMap.extend({

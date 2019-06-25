@@ -1,4 +1,4 @@
-import DefineMap from 'can-define/map/';
+import { DefineMap } from 'can';
 import applicationViewModel from './state';
 
 export default DefineMap.extend({

@@ -1,5 +1,4 @@
-import DefineMap from 'can-define/map/';
-import Component from 'can-component';
+import { DefineMap, Component } from 'can';
 import view from './cs-select-sample.stache!';
 import {OptionMap, OptionList} from 'shuttle-canstrap/select/';
 

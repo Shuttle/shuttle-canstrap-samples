@@ -70,3 +70,6 @@ dev-bundle.max.js
 dev-bundle-min-working.js
 dev-bundle-full.js
 dist
+
+.vscode
+package-lock.json

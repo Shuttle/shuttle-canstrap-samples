@@ -1,5 +1,4 @@
-import DefineMap from 'can-define/map/';
-import Component from 'can-component';
+import { DefineMap, Component } from 'can';
 import view from './cs-button-group-sample.stache!';
 import {ButtonList} from 'shuttle-canstrap/button-group/';
 import state from '~/state';
