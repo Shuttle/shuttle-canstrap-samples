@@ -66,3 +66,4 @@ route.data = routeViewModel;
 route.register('{resource}');
 route.start();
 
+

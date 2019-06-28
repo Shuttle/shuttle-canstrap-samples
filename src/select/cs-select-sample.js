@@ -1,6 +1,6 @@
 import { DefineMap, Component } from 'can';
 import view from './cs-select-sample.stache!';
-import {OptionMap, OptionList} from 'shuttle-canstrap/select/';
+import {OptionList} from 'shuttle-canstrap/select/';
 
 var ViewModel = DefineMap.extend({
     value: {

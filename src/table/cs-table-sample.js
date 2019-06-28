@@ -83,8 +83,6 @@ var ViewModel = DefineMap.extend({
     columns: {
         Type: ColumnList,
         default () {
-            const self = this;
-
             return [
                 {
                     columnTitle: 'Navigate',
@@ -121,10 +119,6 @@ var ViewModel = DefineMap.extend({
                     columnTitle: 'View-Call',
                     columnClass: 'col-1',
                     view: function (row) {
-                        row.viewCall = function() {
-                            self.viewCall(row);
-                        };
-
                         return stache('<cs-button text:raw="view-call" disabled:from="disabled" click:from="viewCall" elementClass:raw="btn-secondary btn-sm"/>')(row);
                     }
                 }
@@ -151,6 +145,17 @@ var ViewModel = DefineMap.extend({
                     disabled: false
                 }
             ];
+        },
+        set(value){
+            const self = this;
+
+            Reflect.each(value, function(row){
+                row.viewCall = function () {
+                    self.viewCall(row);
+                };
+            });
+
+            return value;
         }
     }
 });

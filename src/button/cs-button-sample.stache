@@ -3,4 +3,5 @@
 <cs-button text:from="'some button'" click:from="click" elementClass:from="'btn-primary'" />
 <cs-button text:from="'icon button'" click:from="click" iconNameClass:from="'fa-play-circle'" elementClass:from="'btn-secondary'" />
 <h3>actions</h3>
+<p>The first action in the dropdown responds to a click; the others do not.</p>
 <cs-button actions:from="actions" text:from="'action'" />

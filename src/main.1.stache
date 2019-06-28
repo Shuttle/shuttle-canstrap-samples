@@ -12,7 +12,7 @@
             <cs-modal modalId:from="'modal-confirmation'" primaryText:from="'yes'" dismissText:from="'no'"
                       title:from="'Confirmation'" message:from="'You are about to remove the item.  Continue?'"
                       primaryClick:from='modal.confirmation.primaryClick'/>
-            {{#if(formOptionsAvailable)}}
+            {{#if formOptionsAvailable}}
                 <div>
                     Validation:
                     <cs-checkbox checked:bind="validationChecked" checkedClass:from="'fa-toggle-on'"
