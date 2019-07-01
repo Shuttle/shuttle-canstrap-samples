@@ -13,6 +13,10 @@ var ViewModel = FormViewModel.extend({
         get: function(){
             return [
                 {
+                    value: '',
+                    label: '(select)'
+                },
+                {
                     value: '1',
                     label: 'One'
                 },

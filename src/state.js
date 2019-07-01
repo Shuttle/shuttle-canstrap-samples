@@ -4,6 +4,14 @@ import {ItemList} from 'shuttle-canstrap/sidebar/';
 import {Alerts} from 'shuttle-canstrap/alerts/';
 
 var ApplicationViewModel = DefineMap.extend({
+    validationChecked: {
+        type: 'boolean',
+        default: false
+    },
+    requiredChecked: {
+        type: 'boolean',
+        default: false
+    },
     alerts: {
         Default: Alerts
     },
@@ -56,14 +64,6 @@ let applicationViewModel = new ApplicationViewModel({
     formOptionsAvailable: {
         type: 'boolean',
         default: true
-    },
-    validationChecked: {
-        type: 'boolean',
-        default: false
-    },
-    requiredChecked: {
-        type: 'boolean',
-        default: false
     },
     init: function () {
         this.route.on('resource', function (ev, newVal, oldVal) {
