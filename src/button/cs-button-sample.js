@@ -8,6 +8,9 @@ var handler = function(message){
 }
 
 var ViewModel = DefineMap.extend({
+    disabled: {
+        type: 'boolean'
+    },
     actions: {Type: ActionList},
     click: function (ev) {
         handler('click');

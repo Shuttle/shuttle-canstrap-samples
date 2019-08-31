@@ -1,3 +1,6 @@
+.nav-link > svg { width: 1rem; height: 1rem; }
+.nav-link { color: #fefefe; }
+
 .flex-grow {
     flex: 1 0 auto;
 }

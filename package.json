@@ -31,14 +31,13 @@
         "format": "global"
       }
     },
-    "map": {
-      "popper.js": "popper.js/dist/umd/popper",
-      "bootstrap": "bootstrap/dist/js/bootstrap",
-      "tempusdominus": "tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.js"
+    "paths": {
+      "popper.js": "./node_modules/popper.js/dist/umd/popper.js",
+      "bootstrap": "./node_modules/bootstrap/dist/js/bootstrap.js",
+      "tempusdominus": "./node_modules/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.js"
     }
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "steal-tools bundle --deps --no-minify"
   },
   "author": "",
